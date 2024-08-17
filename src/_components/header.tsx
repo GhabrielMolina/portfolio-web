@@ -27,18 +27,18 @@ export function Header() {
         {/* LIGHT/DARK MODE && MENU INPUT*/}
         <div className="flex items-center gap-3">
           <div className="bg-black rounded-full p-2 cursor-pointer">
-            <SunMoon className="text-white text-sm" />
+            <SunMoon className="text-sm" />
           </div>
 
           {/* TODO: Fazer menu de navegação */}
-          <NavigationMenu className="bg-black rounded-full  hover:bg-yellow-400">
+          <NavigationMenu className="bg-black rounded-full  hover:bg-yellowPrimary text-black">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm text-white">
                   Menu
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className=" bg-yellow-500">
+                <NavigationMenuContent className=" bg-yellowPrimary">
                   <NavigationMenuLink className="text-black font-semibold"></NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
