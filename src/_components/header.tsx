@@ -10,7 +10,7 @@ import { SunMoon } from "lucide-react";
 
 export function Header() {
   return (
-    <div className="p-5 w-full">
+    <div className="py-5 w-full">
       <div className="bg-white rounded-full w-full flex items-center justify-between p-2">
         {/* LOGO && NAME  */}
         <div className="flex items-center gap-2 ">
