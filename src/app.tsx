@@ -1,9 +1,19 @@
 // https://nikunjthesiya.vercel.app/#skills
 
-import { Download, Heart, Mail, Smartphone } from "lucide-react";
+import {
+  Calendar,
+  CalendarDays,
+  Download,
+  GraduationCap,
+  Heart,
+  Mail,
+  MapPin,
+  School,
+  Smartphone,
+} from "lucide-react";
 import { Header } from "./_components/header";
 import { Button } from "./components/ui/button";
-import { Card, CardContent } from "./components/ui/card";
+import TitleField from "./_components/title-field";
 
 export function App() {
   return (
@@ -93,12 +103,7 @@ export function App() {
         className="mt-40 w-full flex flex-col items-center gap-5"
         id="about-me"
       >
-        <div className="relative text-center whitespace-nowrap w-full">
-          <h2 className="opacity-10 text-4xl text-yellowPrimary">About Me</h2>
-          <h3 className="absolute text-3xl text-yellowPrimary font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            About Me
-          </h3>
-        </div>
+        <TitleField title="About Me" />
 
         {/* I LOVE */}
         {/* TODO: fix the overflow */}
@@ -146,8 +151,8 @@ export function App() {
         </div>
 
         {/* README */}
-        <div className="bg-white bg-opacity-75 rounded-3xl p-6 mx-5">
-          <p className="text-sm leading-6 text-black font-semibold">
+        <div className="bg-stone-900 bg-opacity-75 rounded-3xl p-6 mx-5">
+          <p className="text-sm leading-6 font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             reiciendis saepe illum porro asperiores! Sapiente quos provident,
             obcaecati recusandae dolores deleniti odit dolore soluta odio fuga,
@@ -156,13 +161,68 @@ export function App() {
         </div>
 
         {/* CONTACTE ME */}
-        <div className="border-b border-solid border-yellowPrimary pb-5 w-full flex justify-center">
+        <div className="border-b border-solid border-yellowPrimary/15 pb-5 w-full flex justify-center">
           <Button className="gap-2 text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
             <Smartphone />
             <p className="font-semibold text-base">Connect With Me</p>
           </Button>
         </div>
       </div>
+
+      {/* EDUCATION */}
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+        <TitleField title="Education" />
+
+        {/* CARDS */}
+        <div className="w-full flex flex-col px-5 pt-10 gap-4 ">
+          {/* UNIVERSITY */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between">
+              <div className="flex items-center gap-2 text-yellowPrimary bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="" />
+                <p>2023/2 - PRESENT</p>
+              </div>
+
+              <div className="flex items-center gap-2  bg-black px-3 py-2 rounded-full font-semibold">
+                <GraduationCap />
+                <p>Graduation</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              Bachelor of Computer Science
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 items-center">
+                <div className="bg-white p-3 rounded-full items-center">
+                  <School className=" fill-yellowPrimary text-black" />
+                </div>
+                <p className="text-black w-[55%]">
+                  Pontifical Catholic University of Rio Grande do Sul
+                </p>
+              </div>
+
+              <div className="flex gap-2 items-center">
+                <div className="bg-white p-3 rounded-full">
+                  <MapPin className=" fill-yellowPrimary text-black" />
+                </div>
+                <p className="text-black">Porto Alegre, RS, Brazil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* EXPERIENCE */}
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+        <TitleField title="Experience" />
+
+        <div>
+
+        </div>
+      </div>
+      
     </div>
   );
 }
