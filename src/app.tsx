@@ -1,12 +1,11 @@
 // https://nikunjthesiya.vercel.app/#skills
 
 import {
-  Calendar,
   CalendarDays,
+  Check,
   Download,
   GraduationCap,
   Heart,
-  Mail,
   MapPin,
   School,
   Smartphone,
@@ -177,13 +176,13 @@ export function App() {
         <div className="w-full flex flex-col px-5 pt-10 gap-4 ">
           {/* UNIVERSITY */}
           <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <div className="flex items-center gap-2 text-yellowPrimary bg-black px-3 py-2 rounded-full font-semibold">
-                <CalendarDays className="" />
+                <CalendarDays />
                 <p>2023/2 - PRESENT</p>
               </div>
 
-              <div className="flex items-center gap-2  bg-black px-3 py-2 rounded-full font-semibold">
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
                 <GraduationCap />
                 <p>Graduation</p>
               </div>
@@ -218,11 +217,291 @@ export function App() {
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
         <TitleField title="Experience" />
 
-        <div>
+        {/* TODO: ADJUST WIDTH RIGHT ARROW AND COMPLETE INFORMATION*/}
+        {/* CARDS */}
+        <div className="w-full flex flex-col px-5 pt-10 gap-4 ">
+          {/* DLL Group */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between items-center gap-1">
+              <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
+                <div className="bg-white rounded-full">
+                  <img
+                    src="dll-logo.png"
+                    alt="DLL Group Logo"
+                    className="size-12"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-yellowPrimary font-bold">DLL Group</h3>
 
+                  <div className="flex gap-1 items-start mr-1">
+                    <div className="bg-stone-900 rounded-full p-1">
+                      <MapPin className="size-3" />
+                    </div>
+                    <p className="text-xs font-normal">
+                      Porto Alegre, RS, Brazil
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="size-4" />
+                <p className="text-xs">August 2024 - PRESENT</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              IT Front Office Applications Intern
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  ASSIST IN SUPPORTING CORPORATE FINANCIAL SYSTEMS
+                </p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  SUPPORT THE TEAM IN INVESTIGATING INCIDENTS AND DIAGNOSING
+                  PROBLEMS
+                </p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  CONTRIBUTE TO AVOIDING THE OCCURENCE OF INCIDENTS THROUGH
+                  PROACTIVE ANALYSIS MINIMIZING THE IMPACT OF INCIDENTS THAT
+                  CANNOT BE AVOIDED THROUGH ALTERNATIVE SYSTEMIC FLOW OR
+                  CREATION AND APPLICATION OF DATABASE SCRIPTS
+                </p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  UNDERSTAND, SUPPORT AND ENSURE THAT THE WRITING OF THE RCA
+                  (ROOT CAUSE ANALYSIS) OF THE PROBLEMS IS PROVIDED WITH
+                  QUALITY, GENERATING SUBSIDIES FOR SYSTEMIC CORRECTION OF THE
+                  DEVELOPMENT TEAMS AIMING AT THE STABILITY OF THE APPLICATIONS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* RENNER */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between items-center gap-1">
+              <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
+                <div className="bg-white rounded-full p-2">
+                  <img
+                    src="renner-logo.svg"
+                    alt="Renner Logo"
+                    className="size-10"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-yellowPrimary font-bold">Renner</h3>
+
+                  <div className="flex gap-1 items-start mr-1">
+                    <div className="bg-stone-900 rounded-full p-1">
+                      <MapPin className="size-3" />
+                    </div>
+                    <p className="text-xs font-normal">
+                      Porto Alegre, RS, Brazil
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="size-4" />
+                <p className="text-xs">September 2023 - June 2024 </p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              External Customer Service Assistant - Central Meu Cartão
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">EXTERNAL CUSTOMER SERVICE</p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  CREDIT CARD AND FINANCIAL ACCOUNT RELATED PROBLEM RESOLUTIONS
+                </p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">CALL OPENINGS</p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">
+                  CUSTOMER AND INTERNAL EMPLOYEE SUPPORT
+                </p>
+              </div>
+
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">FINANCIAL ACTIVITIES</p>
+              </div>
+            </div>
+          </div>
+
+          {/* FACTUM */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between items-center gap-1">
+              <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
+                <div className="bg-white rounded-full p-2">
+                  <img
+                    src="factum-logo.png"
+                    alt="Factum Logo"
+                    className="size-10 object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-yellowPrimary font-bold">Factum</h3>
+
+                  <div className="flex gap-1 items-start mr-1">
+                    <div className="bg-stone-900 rounded-full p-1">
+                      <MapPin className="size-3" />
+                    </div>
+                    <p className="text-xs font-normal">
+                      Porto Alegre, RS, Brazil
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="size-4" />
+                <p className="text-xs">May 2022 - June 2022</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              IT / INFRASTRUCTURE INTERN
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">TEST</p>
+              </div>
+            </div>
+          </div>
+
+          {/* E.B. */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between items-center gap-1">
+              <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
+                <div className="bg-white rounded-full p-2">
+                  <img
+                    src="eb-logo.svg"
+                    alt="Brazilian Army Logo"
+                    className="size-10 object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-yellowPrimary font-bold">CPOR</h3>
+
+                  <div className="flex gap-1 items-start mr-1">
+                    <div className="bg-stone-900 rounded-full p-1">
+                      <MapPin className="size-3" />
+                    </div>
+                    <p className="text-xs font-normal">
+                      Porto Alegre, RS, Brazil
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="size-4" />
+                <p className="text-xs">February 2021 - December 2021</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              ASPIRING RESERVE OFFICER R/2
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">TEST</p>
+              </div>
+            </div>
+          </div>
+
+          {/* PDPE */}
+          <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+            <div className="flex justify-between items-center gap-1">
+              <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
+                <div className="bg-white rounded-full p-2">
+                  <img
+                    src="pge-logo.png"
+                    alt="Brazilian Army Logo"
+                    className="size-12 object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-yellowPrimary font-bold">PGE-RS</h3>
+
+                  <div className="flex gap-1 items-start mr-1">
+                    <div className="bg-stone-900 rounded-full p-1">
+                      <MapPin className="size-3" />
+                    </div>
+                    <p className="text-xs font-normal">
+                      Porto Alegre, RS, Brazil
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+                <CalendarDays className="size-4" />
+                <p className="text-xs">March 2019 - November 2019</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-black ">
+              STATE PUBLIC DOMAIN OFFICE INTERN - PDPE
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex gap-2 text-black items-start">
+                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+
+                <p className="text-sm font-medium">TEST</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
     </div>
   );
 }
