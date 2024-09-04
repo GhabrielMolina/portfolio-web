@@ -513,6 +513,7 @@ export function App() {
         </div>
       </div>
 
+      {/* TODO: ADD CERTIFICATE CONTENT */}
       {/* CERTIFICATES */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
         <TitleField title="Certificates" />
