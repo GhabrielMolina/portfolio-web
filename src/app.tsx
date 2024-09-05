@@ -22,8 +22,17 @@ import {
 } from "./_components/carousel";
 import { Card, CardContent } from "./_components/ui/card";
 import Technology from "./_components/technology";
+import { technologyOptions } from "./_constants/technology";
 
 export function App() {
+  const technologyWithClasses = [
+    { className: "top-[25%] -left-[35%]" },
+    { className: "top-[50%] -left-[25%]" },
+    { className: "top-[72%] -left-[40%]" },
+    { className: "top-[25%] -right-[55%]" },
+    { className: "top-[50%] -right-[45%]" },
+    { className: "top-[75%] -right-[45%]" },
+  ];
   return (
     <div>
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain ">
@@ -33,7 +42,7 @@ export function App() {
         <div className="flex items-center flex-col text-center gap-4 w-full border-b border-solid border-yellowPrimary/15 px-5">
           <div className="flex gap-2 items-center bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary mt-5 ">
             <img
-              src="waving-hand.svg"
+              src="./icons/waving-hand.svg"
               alt="Waving Hand Emoji"
               className="h-10"
             />
@@ -73,12 +82,25 @@ export function App() {
               className="w-52 sm:w-60 md:w-72 object-cover"
             />
 
-            <Technology title="ReactJS" className="top-[25%] -left-[35%]" />
-            <Technology title="NodeJS" className="top-[50%] -left-[25%]" />
-            <Technology title="NextJS" className="top-[72%] -left-[40%]" />
-            <Technology title="Typescript" className="top-[25%] -right-[55%]" />
-            <Technology title="Javascript" className="top-[50%] -right-[45%]" />
-            <Technology title="SQL" className="top-[75%] -right-[45%]" />
+            <div>
+              {technologyWithClasses.map((techClass, index) =>
+                index >= 3 ? (
+                  <Technology
+                    key={index-3}
+                    title={technologyOptions.frontend[index-3].title}
+                    imageURL={technologyOptions.frontend[index-3].imageURL}
+                    className={techClass.className}
+                  />
+                ) : (
+                  <Technology
+                    key={index}
+                    title={technologyOptions.backend[index].title}
+                    imageURL={technologyOptions.backend[index].imageURL}
+                    className={techClass.className}
+                  />
+                )
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +137,11 @@ export function App() {
             </div>
 
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img src="./icons/sports-icon.svg" alt="Sports Icon" className="w-10" />
+              <img
+                src="./icons/sports-icon.svg"
+                alt="Sports Icon"
+                className="w-10"
+              />
               <p className="font-bold text-red-600 text-xl">Sports</p>
             </div>
 
@@ -129,7 +155,11 @@ export function App() {
             </div>
 
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img src="./icons/beach-icon.svg" alt="Beach Icon" className="w-10" />
+              <img
+                src="./icons/beach-icon.svg"
+                alt="Beach Icon"
+                className="w-10"
+              />
               <p className="font-bold text-blue-400 text-xl">Beach</p>
             </div>
           </div>
@@ -570,9 +600,7 @@ export function App() {
           <TitleField title="Frontend" />
 
           <div>
-            <div>
-
-            </div>
+            <div></div>
           </div>
         </div>
 

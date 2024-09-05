@@ -15,7 +15,7 @@ export function Header() {
         {/* LOGO && NAME  */}
         <div className="flex items-center gap-2 ">
           <img
-            src="logo.png"
+            src="./logo/logo.png"
             alt="GH Logo"
             className="h-10 bg-black rounded-full"
           />
