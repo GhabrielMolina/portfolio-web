@@ -2,18 +2,16 @@
 
 import {
   CalendarDays,
-  Check,
   Download,
   Eye,
   GraduationCap,
   Heart,
-  Link,
   MapPin,
   School,
   Smartphone,
 } from "lucide-react";
 import { Header } from "./_components/header";
-import { Button } from "./components/ui/button";
+import { Button } from "./_components/ui/button";
 import TitleField from "./_components/title-field";
 import {
   Carousel,
@@ -21,8 +19,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./components/ui/carousel";
-import { Card, CardContent } from "./components/ui/card";
+} from "./_components/carousel";
+import { Card, CardContent } from "./_components/ui/card";
+import Technology from "./_components/technology";
 
 export function App() {
   return (
@@ -74,35 +73,12 @@ export function App() {
               className="w-52 sm:w-60 md:w-72 object-cover"
             />
 
-            <div className="absolute top-[25%] -left-[35%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="./reactjs.svg" className="w-7" />
-              <p className="font-medium text-black text-sm">ReactJS</p>
-            </div>
-
-            <div className="absolute top-[50%] -left-[25%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="./nodejs.svg" className="w-7" />
-              <p className="font-medium text-black text-sm">NodeJS</p>
-            </div>
-
-            <div className="absolute top-[72%] -left-[40%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="./nextjs.svg" className="w-7" />
-              <p className="font-medium text-black text-sm">NextJS</p>
-            </div>
-
-            <div className="absolute top-[25%] -right-[55%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="typescript.svg" className="w-7 rounded-[8px]" />
-              <p className="font-medium text-black text-sm">Typescript</p>
-            </div>
-
-            <div className="absolute top-[50%] -right-[45%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="javascript.svg  " className="w-7" />
-              <p className="font-medium text-black text-sm">Javascript</p>
-            </div>
-
-            <div className="absolute top-[75%] -right-[45%] bg-white px-2 py-2 rounded-full flex items-center gap-2">
-              <img src="sql-server.svg" className="w-7" />
-              <p className="font-medium text-black text-sm">SQL</p>
-            </div>
+            <Technology title="ReactJS" className="top-[25%] -left-[35%]" />
+            <Technology title="NodeJS" className="top-[50%] -left-[25%]" />
+            <Technology title="NextJS" className="top-[72%] -left-[40%]" />
+            <Technology title="Typescript" className="top-[25%] -right-[55%]" />
+            <Technology title="Javascript" className="top-[50%] -right-[45%]" />
+            <Technology title="SQL" className="top-[75%] -right-[45%]" />
           </div>
         </div>
       </div>
@@ -131,7 +107,7 @@ export function App() {
           <div className="flex items-center gap-3 pl-5">
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
               <img
-                src="airplane-icon.svg"
+                src="./icons/airplane-icon.svg"
                 alt="Airplane Icon"
                 className="w-10"
               />
@@ -139,13 +115,13 @@ export function App() {
             </div>
 
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img src="sports-icon.svg" alt="Sports Icon" className="w-10" />
+              <img src="./icons/sports-icon.svg" alt="Sports Icon" className="w-10" />
               <p className="font-bold text-red-600 text-xl">Sports</p>
             </div>
 
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[200px] justify-center">
               <img
-                src="motorcycle-icon.svg"
+                src="./icons/motorcycle-icon.svg"
                 alt="Motorcycle Icon"
                 className="w-10"
               />
@@ -153,7 +129,7 @@ export function App() {
             </div>
 
             <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img src="beach-icon.svg" alt="Beach Icon" className="w-10" />
+              <img src="./icons/beach-icon.svg" alt="Beach Icon" className="w-10" />
               <p className="font-bold text-blue-400 text-xl">Beach</p>
             </div>
           </div>
@@ -179,7 +155,7 @@ export function App() {
       </div>
 
       {/* EDUCATION */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Education" />
 
         {/* CARDS */}
@@ -224,7 +200,7 @@ export function App() {
       </div>
 
       {/* EXPERIENCE */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Experience" />
 
         {/* TODO: ADJUST WIDTH RIGHT ARROW AND COMPLETE INFORMATION*/}
@@ -236,7 +212,7 @@ export function App() {
               <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
                 <div className="bg-white rounded-full">
                   <img
-                    src="dll-logo.png"
+                    src="./logo/dll-logo.png"
                     alt="DLL Group Logo"
                     className="size-12"
                   />
@@ -313,7 +289,7 @@ export function App() {
               <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
                 <div className="bg-white rounded-full p-2">
                   <img
-                    src="renner-logo.svg"
+                    src="./logo/renner-logo.svg"
                     alt="Renner Logo"
                     className="size-10"
                   />
@@ -385,7 +361,7 @@ export function App() {
               <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
                 <div className="bg-white rounded-full p-2">
                   <img
-                    src="factum-logo.png"
+                    src="./logo/factum-logo.png"
                     alt="Factum Logo"
                     className="size-10 object-cover"
                   />
@@ -429,7 +405,7 @@ export function App() {
               <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
                 <div className="bg-white rounded-full p-2">
                   <img
-                    src="eb-logo.svg"
+                    src="./logo/eb-logo.svg"
                     alt="Brazilian Army Logo"
                     className="size-10 object-cover"
                   />
@@ -473,7 +449,7 @@ export function App() {
               <div className="flex items-center gap-3  bg-black px-3 py-2 rounded-full">
                 <div className="bg-white rounded-full p-2">
                   <img
-                    src="pge-logo.png"
+                    src="./logo/pge-logo.png"
                     alt="Brazilian Army Logo"
                     className="size-12 object-contain"
                   />
@@ -515,7 +491,7 @@ export function App() {
 
       {/* TODO: ADD CERTIFICATE CONTENT */}
       {/* CERTIFICATES */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Certificates" />
 
         <div className="flex justify-center pt-10">
@@ -533,7 +509,7 @@ export function App() {
                           <div className="flex items-center gap-3  bg-black pr-3  rounded-full">
                             <div className="bg-white rounded-full">
                               <img
-                                src="dll-logo.png"
+                                src="./logo/dll-logo.png"
                                 alt="DLL Group Logo"
                                 className="size-12"
                               />
@@ -546,17 +522,22 @@ export function App() {
                           </div>
 
                           <img
-                            src="certificate.svg"
+                            src="./icons/certificate.svg"
                             alt="Certificate"
                             className="size-10"
                           />
                         </div>
 
-                        <h2 className="text-xl font-bold text-black text-left">FSW Barber - FullStack</h2>
+                        <h2 className="text-xl font-bold text-black text-left">
+                          FSW Barber - FullStack
+                        </h2>
 
                         <div className="flex items-center justify-between w-full">
                           <div className="border-b border-solid border-yellowPrimary/15 w-full">
-                            <Button className="gap-2 bg-black rounded-full py-1 px-3 border border-solid border-yellowPrimary" asChild>
+                            <Button
+                              className="gap-2 bg-black rounded-full py-1 px-3 border border-solid border-yellowPrimary"
+                              asChild
+                            >
                               <a href="">
                                 <Eye />
                                 <p className="font-semibold text-base">View</p>
@@ -564,7 +545,9 @@ export function App() {
                             </Button>
                           </div>
 
-                          <p className="w-full text-right font-medium text-black  shadow-yellowPrimary">AUGUST 2024</p>
+                          <p className="w-full text-right font-medium text-black  shadow-yellowPrimary">
+                            AUGUST 2024
+                          </p>
                         </div>
                       </CardContent>
                     </Card>
@@ -576,6 +559,25 @@ export function App() {
             <CarouselNext />
           </Carousel>
         </div>
+      </div>
+
+      {/* SKILLS */}
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+        <TitleField title="Skills" />
+
+        {/* FRONTEND */}
+        <div className="pt-5">
+          <TitleField title="Frontend" />
+
+          <div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+
+        {/* BACKEND */}
+        <div></div>
       </div>
     </div>
   );
