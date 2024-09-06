@@ -26,13 +26,14 @@ import { technologyOptions } from "./_constants/technology";
 
 export function App() {
   const technologyWithClasses = [
-    { className: "top-[25%] -left-[35%]" },
-    { className: "top-[50%] -left-[25%]" },
-    { className: "top-[72%] -left-[40%]" },
-    { className: "top-[25%] -right-[55%]" },
-    { className: "top-[50%] -right-[45%]" },
-    { className: "top-[75%] -right-[45%]" },
+    { className: "absolute top-[25%] -left-[35%]" },
+    { className: "absolute top-[50%] -left-[25%]" },
+    { className: "absolute top-[72%] -left-[40%]" },
+    { className: "absolute top-[25%] -right-[55%]" },
+    { className: "absolute top-[50%] -right-[45%]" },
+    { className: "absolute top-[75%] -right-[45%]" },
   ];
+
   return (
     <div>
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain ">
@@ -86,9 +87,9 @@ export function App() {
               {technologyWithClasses.map((techClass, index) =>
                 index >= 3 ? (
                   <Technology
-                    key={index-3}
-                    title={technologyOptions.frontend[index-3].title}
-                    imageURL={technologyOptions.frontend[index-3].imageURL}
+                    key={index - 3}
+                    title={technologyOptions.frontend[index - 3].title}
+                    imageURL={technologyOptions.frontend[index - 3].imageURL}
                     className={techClass.className}
                   />
                 ) : (
@@ -272,16 +273,24 @@ export function App() {
             </h2>
 
             <div className="space-y-2">
-              <div className="flex gap-2 text-black items-start">
-                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+              <div className="flex gap-2 text-black">
+                <img
+                  src="/icons/right-arrow.svg"
+                  alt="Right Arrow Icon"
+                  className="min-w-fit"
+                />
 
                 <p className="text-sm font-medium">
                   ASSIST IN SUPPORTING CORPORATE FINANCIAL SYSTEMS
                 </p>
               </div>
 
-              <div className="flex gap-2 text-black items-start">
-                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+              <div className="flex gap-2 text-black">
+                <img
+                  src="/icons/right-arrow.svg"
+                  alt="Right Arrow Icon"
+                  className="min-w-fit"
+                />
 
                 <p className="text-sm font-medium">
                   SUPPORT THE TEAM IN INVESTIGATING INCIDENTS AND DIAGNOSING
@@ -289,8 +298,12 @@ export function App() {
                 </p>
               </div>
 
-              <div className="flex gap-2 text-black items-start">
-                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+              <div className="flex gap-2 text-black">
+                <img
+                  src="/icons/right-arrow.svg"
+                  alt="Right Arrow Icon"
+                  className="min-w-fit"
+                />
 
                 <p className="text-sm font-medium">
                   CONTRIBUTE TO AVOIDING THE OCCURENCE OF INCIDENTS THROUGH
@@ -300,8 +313,12 @@ export function App() {
                 </p>
               </div>
 
-              <div className="flex gap-2 text-black items-start">
-                <img src="right-arrow.svg" alt="Right Arrow Icon" />
+              <div className="flex gap-2 text-black">
+                <img
+                  src="/icons/right-arrow.svg"
+                  alt="Right Arrow Icon"
+                  className="min-w-fit"
+                />
 
                 <p className="text-sm font-medium">
                   UNDERSTAND, SUPPORT AND ENSURE THAT THE WRITING OF THE RCA
@@ -592,20 +609,63 @@ export function App() {
       </div>
 
       {/* SKILLS */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15">
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Skills" />
 
-        {/* FRONTEND */}
-        <div className="pt-5">
-          <TitleField title="Frontend" />
+        <div className="flex flex-col gap-5 items-center">
+          {/* FRONTEND */}
+          <div className="pt-5">
+            <TitleField title="Frontend | Use" />
 
+            <div className="flex w-full gap-4 flex-wrap justify-center py-5">
+              {technologyOptions.frontend.map((tech, index) => (
+                <Technology
+                  key={index}
+                  title={tech.title}
+                  imageURL={tech.imageURL}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* BACKEND */}
+          <div className="pt-5">
+            <TitleField title="Backend | Use" />
+
+            <div className="flex w-full gap-4 flex-wrap justify-center py-5">
+              {technologyOptions.backend.map((tech, index) => (
+                <Technology
+                  key={index}
+                  title={tech.title}
+                  imageURL={tech.imageURL}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* OOP */}
+          <div className="pt-5">
+            <TitleField title="OOP | Use" />
+
+            <div className="flex w-full gap-4 flex-wrap justify-center py-5">
+              {technologyOptions.OOP.map((tech, index) => (
+                <Technology
+                  key={index}
+                  title={tech.title}
+                  imageURL={tech.imageURL}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* DOWNLOAD CV */}
           <div>
-            <div></div>
+            <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
+              <Download />
+              <p className="font-semibold text-base">Download CV</p>
+            </Button>
           </div>
         </div>
-
-        {/* BACKEND */}
-        <div></div>
       </div>
     </div>
   );
