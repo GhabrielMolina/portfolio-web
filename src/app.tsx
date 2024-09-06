@@ -22,22 +22,16 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./_components/carousel";
+} from "./_components/ui/carousel";
 import { Card, CardContent } from "./_components/ui/card";
 import Technology from "./_components/technology";
 import { technologyOptions } from "./_constants/technology";
 import { Dialog, DialogTrigger } from "./_components/ui/dialog";
 import { socialMidiaOptions } from "./_constants/socialMidia";
+import ApresentationField from "./_components/fields/apresentation";
 
 export function App() {
-  const technologyWithClasses = [
-    { className: "absolute top-[25%] -left-[35%]" },
-    { className: "absolute top-[50%] -left-[25%]" },
-    { className: "absolute top-[72%] -left-[40%]" },
-    { className: "absolute top-[25%] -right-[55%]" },
-    { className: "absolute top-[50%] -right-[45%]" },
-    { className: "absolute top-[75%] -right-[45%]" },
-  ];
+
 
   const combinedTechnologyOptions = [
     ...technologyOptions.frontend,
@@ -49,71 +43,7 @@ export function App() {
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain ">
         <Header />
 
-        {/* APRESENTATION */}
-        <div className="flex items-center flex-col text-center gap-4 w-full border-b border-solid border-yellowPrimary/15 px-5">
-          <div className="flex gap-2 items-center bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary mt-5 ">
-            <img
-              src="./icons/waving-hand.svg"
-              alt="Waving Hand Emoji"
-              className="h-10"
-            />
-            <h1 className="text-xl">
-              Hi, I'm{" "}
-              <span className="font-bold text-2xl text-yellowPrimary">
-                Ghabriel Molina
-              </span>
-            </h1>
-          </div>
-
-          <h1 className="font-semibold text-4xl">
-            IT front office applications intern, computer science student and
-            web developer
-          </h1>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            possimus error atque earum aperiam sint eos itaque sunt ullam
-            repudiandae, qui corporis expedita ducimus obcaecati magni ex odio
-            cumque modi?
-          </p>
-
-          {/* DOWNLOAD CV */}
-          <div>
-            <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
-              <Download />
-              <p className="font-semibold text-base">Download CV</p>
-            </Button>
-          </div>
-
-          {/* MY PHOTO */}
-          <div className="relative">
-            <img
-              src="./profile.png"
-              alt="Ghabriel Molina Photo"
-              className="w-52 sm:w-60 md:w-72 object-cover"
-            />
-
-            <div>
-              {technologyWithClasses.map((techClass, index) =>
-                index >= 3 ? (
-                  <Technology
-                    key={index - 3}
-                    title={technologyOptions.frontend[index - 3].title}
-                    imageURL={technologyOptions.frontend[index - 3].imageURL}
-                    className={techClass.className}
-                  />
-                ) : (
-                  <Technology
-                    key={index}
-                    title={technologyOptions.backend[index].title}
-                    imageURL={technologyOptions.backend[index].imageURL}
-                    className={techClass.className}
-                  />
-                )
-              )}
-            </div>
-          </div>
-        </div>
+        <ApresentationField />
       </div>
 
       {/* ABOUT ME */}
