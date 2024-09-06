@@ -5,7 +5,7 @@ interface TechnologyOption {
 
 export const backendTechnologyOptions: TechnologyOption[] = [
   {
-    imageURL: "./technology/reactjs.svg",
+    imageURL: "./technology/nodejs.svg",
     title: "NodeJS",
   },
   {
@@ -17,7 +17,7 @@ export const backendTechnologyOptions: TechnologyOption[] = [
     title: "SQL Server",
   },
   {
-    imageURL: "./technology/tailwind.svg",
+    imageURL: "./technology/prisma.svg",
     title: "Prisma",
   },
 ];

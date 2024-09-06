@@ -27,6 +27,7 @@ import { Card, CardContent } from "./_components/ui/card";
 import Technology from "./_components/technology";
 import { technologyOptions } from "./_constants/technology";
 import { Dialog, DialogTrigger } from "./_components/ui/dialog";
+import { socialMidiaOptions } from "./_constants/socialMidia";
 
 export function App() {
   const technologyWithClasses = [
@@ -678,6 +679,7 @@ export function App() {
         </div>
       </div>
 
+      {/* TODO: ADD PROJECTS CONTENT */}
       {/* PROJECTS */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Projects I’veWorked on" />
@@ -783,6 +785,50 @@ export function App() {
               <p className="font-semibold text-base">Github</p>
             </Button>
           </div>
+        </div>
+      </div>
+
+      {/* TODO: ADD AVATAR */}
+      {/* CONNECT WITH ME */}
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
+        <TitleField title="Connect With Me" />
+
+        <div className="flex flex-col items-center gap-5 w-full pt-5">
+          {socialMidiaOptions.map((social, index) => (
+            <Button
+              key={index}
+              className="flex gap-2 bg-white rounded-full py-1 px-3"
+              asChild
+            >
+              <a href={social.url} className="w-fit">
+                <img src={social.imageURL} />
+                <p className={`font-semibold text-base ${social.color}`}>
+                  {social.title}
+                </p>
+              </a>
+            </Button>
+          ))}
+        </div>
+
+        <img src="" alt="" />
+      </div>
+
+      {/* PORTIFOLIO MADE WITH */}
+      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
+        <TitleField title="Portifolio Made With" />
+
+        <div className="flex gap-4 justify-center pt-5">
+          {technologyOptions.frontend
+            .filter((tech) =>
+              ["ReactJS", "Typescript", "TailwindCSS"].includes(tech.title)
+            )
+            .map((tech, index) => (
+              <Technology
+                key={index}
+                title={tech.title}
+                imageURL={tech.imageURL}
+              />
+            ))}
         </div>
       </div>
     </div>
