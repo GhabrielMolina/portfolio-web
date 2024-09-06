@@ -4,6 +4,7 @@ import {
   CalendarDays,
   Download,
   Eye,
+  Github,
   GraduationCap,
   Heart,
   Info,
@@ -681,7 +682,7 @@ export function App() {
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Projects I’veWorked on" />
 
-        <div className="flex justify-center py-16">
+        <div className="flex flex-col items-center gap-20 pt-16">
           <Carousel
             opts={{
               align: "start",
@@ -774,6 +775,14 @@ export function App() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
+
+          {/* GITHUB */}
+          <div>
+            <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
+              <Github />
+              <p className="font-semibold text-base">Github</p>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
