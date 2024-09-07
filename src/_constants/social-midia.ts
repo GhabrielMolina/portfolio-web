@@ -8,20 +8,20 @@ interface SocialMidiaOption {
 export const socialMidiaOptions: SocialMidiaOption[] = [
   {
     title: "GitHub",
-    imageURL: "/icons/github.png",
-    url: "#",
+    imageURL: "/icons/github-icon.svg",
+    url: "https://github.com/GhabrielMolina",
     color: "text-black hover:text-white",
   },
   {
     title: "LinkedIn",
-    imageURL: "/icons/linkedin.png",
-    url: "#",
-    color: "text-blue-400",
+    imageURL: "/icons/linkedin-icon.svg",
+    url: "https://www.linkedin.com/in/ghabriel-molina",
+    color: "text-blue-700",
   },
   {
     title: "ghabrielmolina@hotmail.com",
-    imageURL: "/icons/email.png",
+    imageURL: "/icons/email-icon.svg",
     url: "#",
-    color: "text-red-700",
+    color: "text-blue-800",
   },
 ];

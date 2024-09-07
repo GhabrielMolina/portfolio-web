@@ -340,20 +340,23 @@ export function App() {
         <TitleField title="Connect With Me" />
 
         <div className="flex flex-col items-center gap-5 w-full pt-5">
-          {socialMidiaOptions.map((social, index) => (
-            <Button
-              key={index}
-              className="flex gap-2 bg-white rounded-full py-1 px-3"
-              asChild
-            >
-              <a href={social.url} className="w-fit">
-                <img src={social.imageURL} />
-                <p className={`font-semibold text-base ${social.color}`}>
-                  {social.title}
-                </p>
-              </a>
-            </Button>
-          ))}
+          {socialMidiaOptions.map((social, index) => {
+            const isEmail = social.title.includes("@");
+            const href = isEmail ? `mailto:${social.title}` : social.url;
+
+            return (
+              <Button
+                key={index}
+                className={`flex gap-2 bg-white rounded-full py-1 px-3 ${social.color}`}
+                asChild
+              >
+                <a href={href} className="w-fit">
+                  <img src={social.imageURL} className="w-7" />
+                  <p className="font-semibold text-base">{social.title}</p>
+                </a>
+              </Button>
+            );
+          })}
         </div>
 
         <img src="" alt="" />
