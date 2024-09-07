@@ -6,12 +6,10 @@ import {
   Eye,
   Github,
   GraduationCap,
-  Heart,
   Info,
   Link,
   MapPin,
   School,
-  Smartphone,
 } from "lucide-react";
 import { Header } from "./_components/header";
 import { Button } from "./_components/ui/button";
@@ -29,10 +27,9 @@ import { technologyOptions } from "./_constants/technology";
 import { Dialog, DialogTrigger } from "./_components/ui/dialog";
 import { socialMidiaOptions } from "./_constants/socialMidia";
 import ApresentationField from "./_components/fields/apresentation";
+import AboutMeField from "./_components/fields/aboutMe";
 
 export function App() {
-
-
   const combinedTechnologyOptions = [
     ...technologyOptions.frontend,
     ...technologyOptions.backend,
@@ -47,83 +44,7 @@ export function App() {
       </div>
 
       {/* ABOUT ME */}
-      <div
-        className="mt-40 w-full flex flex-col items-center gap-5"
-        id="about-me"
-      >
-        <TitleField title="About Me" />
-
-        {/* I LOVE */}
-        {/* TODO: fix the overflow */}
-        <div className="flex flex-col items-start w-full gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden lg:items-center">
-          <div className="flex gap-2 items-center px-5">
-            <Heart className=" fill-white" />
-
-            <div className="relative text-center w-full whitespace-nowrap">
-              <h2 className="opacity-10 text-yellowPrimary text-3xl">I Love</h2>
-              <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl text-yellowPrimary">
-                I Love
-              </h3>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 pl-5">
-            <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img
-                src="./icons/airplane-icon.svg"
-                alt="Airplane Icon"
-                className="w-10"
-              />
-              <p className="font-bold text-blue-400 text-xl">Travel</p>
-            </div>
-
-            <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img
-                src="./icons/sports-icon.svg"
-                alt="Sports Icon"
-                className="w-10"
-              />
-              <p className="font-bold text-red-600 text-xl">Sports</p>
-            </div>
-
-            <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[200px] justify-center">
-              <img
-                src="./icons/motorcycle-icon.svg"
-                alt="Motorcycle Icon"
-                className="w-10"
-              />
-              <p className="font-bold text-red-700 text-xl">Motorcycle</p>
-            </div>
-
-            <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center w-[150px] justify-center">
-              <img
-                src="./icons/beach-icon.svg"
-                alt="Beach Icon"
-                className="w-10"
-              />
-              <p className="font-bold text-blue-400 text-xl">Beach</p>
-            </div>
-          </div>
-        </div>
-
-        {/* README */}
-        <div className="bg-stone-900 bg-opacity-75 rounded-3xl p-6 mx-5">
-          <p className="text-sm leading-6 font-semibold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            reiciendis saepe illum porro asperiores! Sapiente quos provident,
-            obcaecati recusandae dolores deleniti odit dolore soluta odio fuga,
-            hic ad repellendus omnis!
-          </p>
-        </div>
-
-        {/* CONTACTE ME */}
-        <div className="border-b border-solid border-yellowPrimary/15 pb-5 w-full flex justify-center">
-          <Button className="gap-2 text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
-            <Smartphone />
-            <p className="font-semibold text-base">Connect With Me</p>
-          </Button>
-        </div>
-      </div>
+      <AboutMeField />
 
       {/* EDUCATION */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">

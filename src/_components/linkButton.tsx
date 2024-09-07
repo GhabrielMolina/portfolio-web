@@ -1,16 +1,17 @@
-import { Download, Link, Github } from "lucide-react";
+import { Download, Link, Github, Smartphone} from "lucide-react";
 import { Button } from "./ui/button";
 
 interface LinkButtonProps {
   name: string;
   url: string;
-  icon: "Download" | "Link" | "Github";
+  icon: "Download" | "Link" | "Github" | "Smartphone";
 }
 
 const iconMap = {
   Download,
   Link,
   Github,
+  Smartphone,
 };
 
 const LinkButton = ({ name, url, icon }: LinkButtonProps) => {
