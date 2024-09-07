@@ -90,7 +90,6 @@ export function App() {
         </div>
       </div>
 
-      {/* EXPERIENCE */}
       <ExperienceField />
 
       {/* TODO: ADD CERTIFICATE CONTENT */}
