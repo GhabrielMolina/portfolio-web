@@ -14,7 +14,7 @@ const iconMap = {
   Smartphone,
 };
 
-const LinkButton = ({ name, url, icon }: LinkButtonProps) => {
+const LinkButtonItem = ({ name, url, icon }: LinkButtonProps) => {
   const IconComponent = iconMap[icon];
   return (
     <div>
@@ -31,4 +31,4 @@ const LinkButton = ({ name, url, icon }: LinkButtonProps) => {
   );
 };
 
-export default LinkButton;
+export default LinkButtonItem;

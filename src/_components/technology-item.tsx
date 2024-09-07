@@ -4,7 +4,7 @@ interface TechnologyProps {
   className?: string;
 }
 
-const Technology = ({ title, imageURL, className }: TechnologyProps) => {
+const TechnologyItem = ({ title, imageURL, className }: TechnologyProps) => {
   return (
     <div className={`bg-white px-2 py-2 rounded-full flex items-center gap-2 min-w-fit ${className}`}>
       <img src={`${imageURL}`} className="w-7"/>
@@ -13,4 +13,4 @@ const Technology = ({ title, imageURL, className }: TechnologyProps) => {
   );
 };
 
-export default Technology;
+export default TechnologyItem;

@@ -1,6 +1,6 @@
 import { technologyOptions } from "@/_constants/technology";
-import Technology from "../technology";
-import LinkButton from "../linkButton";
+import Technology from "../technology-item";
+import LinkButton from "../link-button-item";
 
 const ApresentationField = () => {
   const technologyWithClasses = [

@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
-import TitleField from "../title-field";
-import LinkButton from "../linkButton";
-import Loves from "../loves";
+import TitleField from "../title-item";
+import LinkButton from "../link-button-item";
+import Loves from "../love-item";
 
 const AboutMeField = () => {
   const loves = [

@@ -2,7 +2,7 @@ interface TitleFieldProps {
   title: string;
 }
 
-const TitleField = ({ title }: TitleFieldProps) => {
+const TitleItem = ({ title }: TitleFieldProps) => {
   return (
     <div className="relative text-center whitespace-nowrap w-full">
       <h2 className="opacity-10 text-4xl text-yellowPrimary">{title}</h2>
@@ -13,4 +13,4 @@ const TitleField = ({ title }: TitleFieldProps) => {
   );
 };
 
-export default TitleField;
+export default TitleItem;

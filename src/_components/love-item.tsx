@@ -3,7 +3,7 @@ interface LovesProps {
   src: string;
 }
 
-const Loves = ({name, src} : LovesProps) => {
+const LoveItem = ({name, src} : LovesProps) => {
   return (
     <div className="bg-white px-3 py-2 rounded-full flex gap-2 items-center justify-center min-w-fit">
       <img
@@ -15,4 +15,4 @@ const Loves = ({name, src} : LovesProps) => {
   );
 };
 
-export default Loves;
+export default LoveItem;
