@@ -12,13 +12,7 @@ const ExperienceField = () => {
         {experienceOptions.map((experience, index) => (
           <ExperienceItem
             key={index}
-            name={experience.name}
-            position={experience.position}
-            locale={experience.locale}
-            imageURL={experience.imageURL}
-            description={experience.description}
-            startDate={experience.startDate}
-            endDate={experience.endDate}
+            {...experience}
           />
         ))}
       </div>
