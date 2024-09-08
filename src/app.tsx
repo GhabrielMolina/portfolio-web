@@ -4,10 +4,7 @@ import {
   CalendarDays,
   Download,
   Eye,
-  Github,
   GraduationCap,
-  Info,
-  Link,
   MapPin,
   School,
 } from "lucide-react";
@@ -24,18 +21,14 @@ import {
 import { Card, CardContent } from "./_components/ui/card";
 import Technology from "./_components/technology-item";
 import { technologyOptions } from "./_constants/technology";
-import { Dialog, DialogTrigger } from "./_components/ui/dialog";
+
 import { socialMidiaOptions } from "./_constants/social-midia";
 import ApresentationField from "./_components/fields/apresentation";
 import AboutMeField from "./_components/fields/about-me";
 import ExperienceField from "./_components/fields/experience";
+import ProjectsField from "./_components/fields/projects";
 
 export function App() {
-  const combinedTechnologyOptions = [
-    ...technologyOptions.frontend,
-    ...technologyOptions.backend,
-  ];
-
   return (
     <div>
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain ">
@@ -164,7 +157,6 @@ export function App() {
         </div>
       </div>
 
-      {/* TODO: DOWNLOAD IMAGES */}
       {/* SKILLS */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Skills" />
@@ -225,116 +217,8 @@ export function App() {
         </div>
       </div>
 
-      {/* TODO: ADD PROJECTS CONTENT */}
-      {/* PROJECTS */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
-        <TitleField title="Projects I’veWorked on" />
+      <ProjectsField />
 
-        <div className="flex flex-col items-center gap-20 pt-16">
-          <Carousel
-            opts={{
-              align: "start",
-            }}
-            orientation="vertical"
-            className="w-full max-w-md"
-          >
-            <CarouselContent className="-mt-1 h-[600px]">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="pt-1 md:basis-1/2">
-                  <div className="p-1">
-                    <Card className="w-full rounded-3xl p-5">
-                      <CardContent className="flex flex-col gap-4 p-0 ">
-                        {/* IMAGE */}
-                        <div>
-                          <img src="./projects/fsw-barber-project.png" alt="" />
-                        </div>
-
-                        {/* CONTENT */}
-                        <div className="w-full">
-                          <div className="flex justify-between items-center">
-                            <h2 className="font-bold text-4xl">FSW-BARBER</h2>
-
-                            <Dialog>
-                              <DialogTrigger>
-                                <Info className="text-black fill-yellowPrimary size-8" />
-                              </DialogTrigger>
-                            </Dialog>
-                          </div>
-
-                          <div className="pt-4">
-                            <p className="text-xs font-light">Worked on</p>
-                            <div className="flex gap-2 items-center pt-1">
-                              <p className="bg-stone-800 px-1.5 rounded-full text-sm ">
-                                Website
-                              </p>
-                              <p className="bg-stone-800 px-1.5 rounded-full text-sm ">
-                                Deploy
-                              </p>
-                            </div>
-                          </div>
-
-                          <div className="py-4">
-                            <p className="text-xs font-light">
-                              Technologies I have used
-                            </p>
-
-                            <div className="flex flex-wrap justify-start gap-2 pt-1">
-                              {combinedTechnologyOptions
-                                .filter((tech) =>
-                                  [
-                                    "ReactJS",
-                                    "Typescript",
-                                    "NodeJS",
-                                    "NextJS",
-                                    "TailwindCSS",
-                                    "Prisma",
-                                  ].includes(tech.title)
-                                )
-                                .map((tech, index) => (
-                                  <Technology
-                                    key={index}
-                                    title={tech.title}
-                                    imageURL={tech.imageURL}
-                                  />
-                                ))}
-                            </div>
-                          </div>
-
-                          <div>
-                            <Button
-                              className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary"
-                              asChild
-                            >
-                              <a href="">
-                                <Link />
-                                <p className="font-semibold text-base">
-                                  Go to FSW-BARBER
-                                </p>
-                              </a>
-                            </Button>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-
-          {/* GITHUB */}
-          <div>
-            <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
-              <Github />
-              <p className="font-semibold text-base">Github</p>
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      {/* TODO: ADD AVATAR */}
       {/* CONNECT WITH ME */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
         <TitleField title="Connect With Me" />
