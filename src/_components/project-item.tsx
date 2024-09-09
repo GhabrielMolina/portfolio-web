@@ -47,16 +47,16 @@ const ProjectItem = ({
 
             {/* CONTENT */}
             <div className="w-full">
-              <div className="flex justify-between items-center">
+              <div className="flex gap-3 items-center">
                 <h2 className="font-bold text-4xl">{title}</h2>
 
                 {/* TDOD ADD INFO PROJECT */}
                 <Dialog>
-                  <DialogTrigger>
-                    <Info className="text-black fill-yellowPrimary size-8" />
+                  <DialogTrigger >
+                    <Info className="text-black fill-yellowPrimary size-9 hover:fill-none hover:text-white" />
                   </DialogTrigger>
 
-                  <div className="flex items-center justify-center fixed inset-0 z-50">
+                  <div className="flex items-center justify-center ">
                     <DialogContent className="w-[80%] max-h-[80%] bg-zinc-900 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
                       <DialogHeader>
                         <DialogTitle className="text-2xl">{title}</DialogTitle>
