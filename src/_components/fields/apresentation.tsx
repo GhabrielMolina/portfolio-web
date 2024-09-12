@@ -4,16 +4,16 @@ import LinkButton from "../link-button-item";
 
 const ApresentationField = () => {
   const technologyWithClasses = [
-    { className: "absolute top-[25%] -left-[35%]" },
-    { className: "absolute top-[50%] -left-[25%]" },
-    { className: "absolute top-[72%] -left-[40%]" },
-    { className: "absolute top-[25%] -right-[55%]" },
+    { className: "absolute top-[25%] -left-[25%]" },
+    { className: "absolute top-[75%] -left-[35%]" },
+    { className: "absolute top-[50%] -left-[50%]" },
     { className: "absolute top-[50%] -right-[45%]" },
-    { className: "absolute top-[75%] -right-[45%]" },
+    { className: "absolute top-[75%] -right-[58%] " },
+    { className: "absolute top-[25%] -right-[40%]" },
   ];
 
   return (
-    <div className="flex items-center flex-col text-center gap-4 w-full border-b border-solid border-yellowPrimary/15 px-5">
+    <div className="flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-yellowPrimary/15 px-5">
       <div className="flex gap-2 items-center bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary mt-5 ">
         <img
           src="./icons/waving-hand.svg"
@@ -49,10 +49,13 @@ const ApresentationField = () => {
 
       {/* MY PHOTO */}
       <div className="relative">
+        <div className="absolute -left-[10%] -bottom-[10%] w-fit flex items-center  justify-center">
+          <div className="w-64 h-64 border-4 shadow-lg shadow-white rounded-full"></div>
+        </div>
         <img
           src="./profile.png"
           alt="Ghabriel Molina Photo"
-          className="w-52 sm:w-60 md:w-72 object-cover"
+          className="w-52 sm:w-60 md:w-72 object-cover relative z-10"
         />
 
         <div>
