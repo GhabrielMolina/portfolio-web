@@ -52,25 +52,23 @@ const ProjectItem = ({
 
                 {/* TDOD ADD INFO PROJECT */}
                 <Dialog>
-                  <DialogTrigger >
+                  <DialogTrigger>
                     <Info className="text-black fill-yellowPrimary size-9 hover:fill-none hover:text-white" />
                   </DialogTrigger>
 
-                  <div className="flex items-center justify-center ">
-                    <DialogContent className="w-[80%] max-h-[80%] bg-zinc-900 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
-                      <DialogHeader>
-                        <DialogTitle className="text-2xl">{title}</DialogTitle>
-                      </DialogHeader>
-                      {description.map((desc, index) => (
-                        <DialogDescription
-                          key={index}
-                          className="text-md font-semibold -tracking-tight"
-                        >
-                          {desc}
-                        </DialogDescription>
-                      ))}
-                    </DialogContent>
-                  </div>
+                  <DialogContent className="w-[80%] bg-zinc-900 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl">{title}</DialogTitle>
+                    </DialogHeader>
+                    {description.map((desc, index) => (
+                      <DialogDescription
+                        key={index}
+                        className="text-md font-semibold -tracking-tight"
+                      >
+                        {desc}
+                      </DialogDescription>
+                    ))}
+                  </DialogContent>
                 </Dialog>
               </div>
 
