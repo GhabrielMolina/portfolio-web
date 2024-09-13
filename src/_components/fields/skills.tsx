@@ -1,8 +1,7 @@
 import { technologyOptions } from "@/_constants/technology";
-import { Download } from "lucide-react";
-import { Button } from "../ui/button";
 import TitleField from "../title-item";
 import Technology from "../technology-item";
+import LinkButtonItem from "../link-button-item";
 
 const SkillsField = () => {
   return (
@@ -56,12 +55,11 @@ const SkillsField = () => {
         </div>
 
         {/* DOWNLOAD CV */}
-        <div>
-          <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
-            <Download />
-            <p className="font-semibold text-base">Download CV</p>
-          </Button>
-        </div>
+        <LinkButtonItem
+          name="Download CV"
+          icon="Download"
+          url="https://drive.google.com/uc?export=download&id=1HOQVfzri_38Hii6gaGy3yi3BE7aPet2K"
+        />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
 import TitleField from "../title-item";
-import LinkButton from "../link-button-item";
 import Loves from "../love-item";
+import LinkButtonItem from "../link-button-item";
 
 const AboutMeField = () => {
   const loves = [
@@ -74,7 +74,11 @@ const AboutMeField = () => {
       </div>
 
       {/* CONTACTE ME */}
-      <LinkButton name="Contact With Me" url="#ConnectWithMe" icon="Smartphone" />
+      <LinkButtonItem
+        name="Contact With Me"
+        url="#ConnectWithMe"
+        icon="Smartphone"
+      />
     </div>
   );
 };

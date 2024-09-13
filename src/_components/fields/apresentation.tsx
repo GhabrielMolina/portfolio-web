@@ -1,6 +1,6 @@
 import { technologyOptions } from "@/_constants/technology";
 import Technology from "../technology-item";
-import LinkButton from "../link-button-item";
+import LinkButtonItem from "../link-button-item";
 
 const ApresentationField = () => {
   const technologyWithClasses = [
@@ -41,7 +41,7 @@ const ApresentationField = () => {
       </p>
 
       {/* DOWNLOAD CV */}
-      <LinkButton
+      <LinkButtonItem
         name="Download CV"
         icon="Download"
         url="https://drive.google.com/uc?export=download&id=1HOQVfzri_38Hii6gaGy3yi3BE7aPet2K"

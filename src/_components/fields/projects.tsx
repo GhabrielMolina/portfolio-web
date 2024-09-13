@@ -1,7 +1,5 @@
 import { projectOptions } from "@/_constants/project";
-import { Github } from "lucide-react";
 import ProjectItem from "../project-item";
-import { Button } from "../ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -9,6 +7,7 @@ import {
   CarouselNext,
 } from "../ui/carousel";
 import TitleField from "../title-item";
+import LinkButtonItem from "../link-button-item";
 
 const ProjectsField = () => {
   return (
@@ -33,12 +32,7 @@ const ProjectsField = () => {
         </Carousel>
 
         {/* GITHUB */}
-        <div>
-          <Button className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary">
-            <Github />
-            <p className="font-semibold text-base">Github</p>
-          </Button>
-        </div>
+        <LinkButtonItem name="Back to Top" icon="ChevronsUp" url="#top" />
       </div>
     </div>
   );
