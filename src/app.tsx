@@ -2,18 +2,17 @@
 
 import { CalendarDays, GraduationCap, MapPin, School } from "lucide-react";
 import { Header } from "./_components/header";
-import { Button } from "./_components/ui/button";
 import TitleField from "./_components/title-item";
 import Technology from "./_components/technology-item";
 import { technologyOptions } from "./_constants/technology";
 
-import { socialMidiaOptions } from "./_constants/social-midia";
 import ApresentationField from "./_components/fields/apresentation";
 import AboutMeField from "./_components/fields/about-me";
 import ExperienceField from "./_components/fields/experience";
 import ProjectsField from "./_components/fields/projects";
 import CertificatesField from "./_components/fields/certificates";
 import SkillsField from "./_components/fields/skills";
+import ConnectWithMeField from "./_components/fields/connect-with-me";
 
 export function App() {
   return (
@@ -75,33 +74,7 @@ export function App() {
       <CertificatesField />
       <SkillsField />
       <ProjectsField />
-
-      {/* CONNECT WITH ME */}
-      <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
-        <TitleField title="Connect With Me" />
-
-        <div className="flex flex-col items-center gap-5 w-full pt-5">
-          {socialMidiaOptions.map((social, index) => {
-            const isEmail = social.title.includes("@");
-            const href = isEmail ? `mailto:${social.title}` : social.url;
-
-            return (
-              <Button
-                key={index}
-                className={`flex gap-2 bg-white rounded-full py-1 px-3 ${social.color}`}
-                asChild
-              >
-                <a href={href} className="w-fit">
-                  <img src={social.imageURL} className="w-7" />
-                  <p className="font-semibold text-base">{social.title}</p>
-                </a>
-              </Button>
-            );
-          })}
-        </div>
-
-        <img src="" alt="" />
-      </div>
+      <ConnectWithMeField />
 
       {/* PORTIFOLIO MADE WITH */}
       <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">

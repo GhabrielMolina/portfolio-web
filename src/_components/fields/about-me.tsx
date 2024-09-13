@@ -74,7 +74,7 @@ const AboutMeField = () => {
       </div>
 
       {/* CONTACTE ME */}
-      <LinkButton name="Contact With Me" url="#contact" icon="Smartphone" />
+      <LinkButton name="Contact With Me" url="#ConnectWithMe" icon="Smartphone" />
     </div>
   );
 };

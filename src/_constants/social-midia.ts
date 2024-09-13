@@ -24,4 +24,10 @@ export const socialMidiaOptions: SocialMidiaOption[] = [
     url: "#",
     color: "text-blue-800",
   },
+  {
+    title: "WhatsApp",
+    imageURL: "/icons/whatsapp-icon.svg",
+    url: "https://wa.me/5551991255282?text=Olá%20Ghabriel!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20contigo.",
+    color: "text-green-600",
+  },
 ];
