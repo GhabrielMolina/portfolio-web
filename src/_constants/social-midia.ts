@@ -10,7 +10,7 @@ export const socialMidiaOptions: SocialMidiaOption[] = [
     title: "GitHub",
     imageURL: "/icons/github-icon.svg",
     url: "https://github.com/GhabrielMolina",
-    color: "text-black hover:text-white",
+    color: "text-primary hover:text-secondary",
   },
   {
     title: "LinkedIn",

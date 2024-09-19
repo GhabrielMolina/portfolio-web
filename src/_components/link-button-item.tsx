@@ -1,4 +1,4 @@
-import { Download, Link, Smartphone, ChevronsUp} from "lucide-react";
+import { Download, Link, Smartphone, ChevronsUp } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface LinkButtonProps {
@@ -19,7 +19,7 @@ const LinkButtonItem = ({ name, url, icon }: LinkButtonProps) => {
   return (
     <div>
       <Button
-        className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary"
+        className="flex gap-2 items-center text-destructive bg-destructive/15 rounded-full py-1 px-3 border border-solid border-destructive"
         asChild
       >
         <a href={url}>

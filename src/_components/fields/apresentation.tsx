@@ -13,8 +13,8 @@ const ApresentationField = () => {
   ];
 
   return (
-    <div className="flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-yellowPrimary/15 px-5">
-      <div className="flex gap-2 items-center bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary mt-5 ">
+    <div className="flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-destructive/15 px-5">
+      <div className="flex gap-2 items-center bg-destructive/15 rounded-full py-1 px-3 border border-solid border-destructive mt-5 ">
         <img
           src="./icons/waving-hand.svg"
           alt="Waving Hand Emoji"
@@ -22,7 +22,7 @@ const ApresentationField = () => {
         />
         <h1 className="text-xl">
           Hi, I'm{" "}
-          <span className="font-bold text-2xl text-yellowPrimary">
+          <span className="font-bold text-2xl text-destructive">
             Ghabriel Molina
           </span>
         </h1>
@@ -50,7 +50,7 @@ const ApresentationField = () => {
       {/* MY PHOTO */}
       <div className="relative">
         <div className="absolute -left-[10%] -bottom-[10%] w-fit flex items-center  justify-center">
-          <div className="w-64 h-64 border-4 shadow-lg shadow-white rounded-full"></div>
+          <div className="w-64 h-64 border-4 shadow-lg shadow-secondary rounded-full"></div>
         </div>
         <img
           src="./profile.png"

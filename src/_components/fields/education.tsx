@@ -3,20 +3,20 @@ import TitleField from "../title-item";
 
 const EducationField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
+    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
       <TitleField title="Education" />
 
       {/* CARDS */}
       <div className="w-full flex flex-col px-5 pt-10 gap-4 ">
         {/* UNIVERSITY */}
-        <div className="bg-white bg-opacity-75 w-full rounded-xl p-4 space-y-4">
+        <div className="bg-secondary/75 dark:bg-secondary/15 w-full rounded-xl p-4 space-y-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2 text-yellowPrimary bg-black px-3 py-2 rounded-full font-semibold">
+            <div className="flex items-center gap-2 text-destructive bg-primary px-3 py-2 rounded-full font-semibold">
               <CalendarDays />
               <p>2023/2 - PRESENT</p>
             </div>
 
-            <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold">
+            <div className="flex items-center gap-2 bg-primary px-3 py-2 rounded-full font-semibold">
               <GraduationCap />
               <p>Graduation</p>
             </div>
@@ -28,8 +28,8 @@ const EducationField = () => {
 
           <div className="space-y-2">
             <div className="flex gap-2 items-center">
-              <div className="bg-white p-3 rounded-full items-center">
-                <School className=" fill-yellowPrimary text-black" />
+              <div className="bg-secondary p-3 rounded-full items-center">
+                <School className=" fill-destructive text-primary" />
               </div>
               <p className="text-black w-[55%]">
                 Pontifical Catholic University of Rio Grande do Sul
@@ -37,8 +37,8 @@ const EducationField = () => {
             </div>
 
             <div className="flex gap-2 items-center">
-              <div className="bg-white p-3 rounded-full">
-                <MapPin className=" fill-yellowPrimary text-black" />
+              <div className="bg-secondary p-3 rounded-full">
+                <MapPin className=" fill-destructive text-primary" />
               </div>
               <p className="text-black">Porto Alegre, RS, Brazil</p>
             </div>

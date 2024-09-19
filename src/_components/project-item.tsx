@@ -6,12 +6,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { Info, Link } from "lucide-react";
-import { Button } from "./ui/button";
+import { Info } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { CarouselItem } from "./ui/carousel";
 import { technologyOptions } from "@/_constants/technology";
 import Technology from "./technology-item";
+import LinkButtonItem from "./link-button-item";
 
 interface ProjectItemProps {
   title: string;
@@ -39,7 +39,7 @@ const ProjectItem = ({
     <CarouselItem className="pt-1 md:basis-1/2">
       <div className="p-1">
         <Card className="w-full rounded-3xl p-5">
-          <CardContent className="flex flex-col gap-4 p-0 ">
+          <CardContent className="flex flex-col gap-4 p-0">
             {/* IMAGE */}
             <div>
               <img src={imageURL} />
@@ -48,17 +48,19 @@ const ProjectItem = ({
             {/* CONTENT */}
             <div className="w-full">
               <div className="flex gap-3 items-center">
-                <h2 className="font-bold text-4xl">{title}</h2>
+                <h2 className="font-bold text-4xl text-white">{title}</h2>
 
                 {/* TDOD ADD INFO PROJECT */}
                 <Dialog>
                   <DialogTrigger>
-                    <Info className="text-black fill-yellowPrimary size-9 hover:fill-none hover:text-white" />
+                    <Info className="text-white/75 size-9 hover:fill-none hover:text-white" />
                   </DialogTrigger>
 
-                  <DialogContent className="w-[80%] bg-zinc-900 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
+                  <DialogContent className="w-[80%] bg-black/50 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
                     <DialogHeader>
-                      <DialogTitle className="text-2xl">{title}</DialogTitle>
+                      <DialogTitle className="text-2xl text-white">
+                        {title}
+                      </DialogTitle>
                     </DialogHeader>
                     {description.map((desc, index) => (
                       <DialogDescription
@@ -78,7 +80,7 @@ const ProjectItem = ({
                   {workedOn.map((work, index) => (
                     <p
                       key={index}
-                      className="bg-stone-800 px-1.5 rounded-full text-sm "
+                      className="bg-white/50 px-1.5 rounded-full text-sm font-bold dark:font-semibold"
                     >
                       {work}
                     </p>
@@ -107,18 +109,7 @@ const ProjectItem = ({
                   })}
                 </div>
               </div>
-
-              <div>
-                <Button
-                  className="flex gap-2 items-center text-yellowPrimary bg-yellowPrimary/15 rounded-full py-1 px-3 border border-solid border-yellowPrimary"
-                  asChild
-                >
-                  <a href={link}>
-                    <Link />
-                    <p className="font-semibold text-base">Go to {title}</p>
-                  </a>
-                </Button>
-              </div>
+              <LinkButtonItem name={`Go to ${title}`} url={link} icon="Link" />
             </div>
           </CardContent>
         </Card>

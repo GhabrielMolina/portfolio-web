@@ -10,11 +10,14 @@ import SkillsField from "./_components/fields/skills";
 import ConnectWithMeField from "./_components/fields/connect-with-me";
 import EducationField from "./_components/fields/education";
 import PortifolioMadeWithField from "./_components/fields/portifolio-made-with";
+import { ThemeProvider } from "./_components/theme-provider";
+import "../app/globals.css";
+import "./index.css";
 
 export function App() {
   return (
-    <div id="top">
-      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain ">
+    <ThemeProvider>
+      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain dark:bg-none">
         <Header />
         <ApresentationField />
       </div>
@@ -27,6 +30,6 @@ export function App() {
       <ProjectsField />
       <ConnectWithMeField />
       <PortifolioMadeWithField />
-    </div>
+    </ThemeProvider>
   );
 }

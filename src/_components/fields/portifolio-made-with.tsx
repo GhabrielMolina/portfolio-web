@@ -4,7 +4,7 @@ import { technologyOptions } from "@/_constants/technology";
 
 const PortifolioMadeWithField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
+    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
       <TitleField title="Portifolio Made With" />
 
       <div className="flex gap-4 justify-center pt-5">

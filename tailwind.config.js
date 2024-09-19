@@ -18,29 +18,25 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: 'Poppins'
+        sans: "Poppins",
       },
       backgroundImage: {
         pattern: "url(bg-vector.svg)",
       },
       colors: {
-        yellowPrimary: 'rgb(234 179 8 / var(--tw-bg-opacity))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+        primary: "rgba(var(--primary))",
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "rgba(var(--secondary))",
+          foreground: "rgba(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "rgba(var(--destructive))",
+          foreground: "rgba(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",

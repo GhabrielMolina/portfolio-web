@@ -6,7 +6,7 @@ const ConnectWithMeField = () => {
   return (
     <div
       id="ConnectWithMe"
-      className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5"
+      className="py-10 border-b border-solid border-y-destructive/15 px-5"
     >
       <TitleField title="Connect With Me" />
 
@@ -15,10 +15,11 @@ const ConnectWithMeField = () => {
           const isEmail = social.title.includes("@");
           const href = isEmail ? `mailto:${social.title}` : social.url;
 
+          // TODO: FIX GITHUB ICON COLOR
           return (
             <Button
               key={index}
-              className={`flex items-center gap-2 bg-white rounded-full py-1 px-3 ${social.color}`}
+              className={`flex items-center gap-2 bg-secondary rounded-full py-1 px-3 ${social.color}`}
               asChild
             >
               <a href={href} className="w-fit">

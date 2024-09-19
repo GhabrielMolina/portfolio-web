@@ -20,7 +20,7 @@ const AboutMeField = () => {
 
   return (
     <div
-      className="mt-40 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-yellowPrimary/15 px-5"
+      className="mt-40 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15 px-5"
       id="about-me"
     >
       <TitleField title="About Me" />
@@ -29,11 +29,11 @@ const AboutMeField = () => {
       {/* TODO: fix the overflow */}
       <div className="flex flex-col items-start w-full gap-3 lg:items-center">
         <div className="flex gap-2 items-center px-5">
-          <Heart className=" fill-white" />
+          <Heart className=" fill-secondary" />
 
           <div className="relative text-center whitespace-nowrap">
-            <h2 className="opacity-10 text-yellowPrimary text-3xl">I Love</h2>
-            <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl text-yellowPrimary">
+            <h2 className="opacity-10 text-destructive text-3xl">I Love</h2>
+            <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl text-destructive">
               I Love
             </h3>
           </div>
@@ -47,8 +47,8 @@ const AboutMeField = () => {
       </div>
 
       {/* README */}
-      <div className="bg-stone-900 bg-opacity-75 rounded-3xl p-6 mx-5">
-        <p className="text-sm leading-6 font-semibold">
+      <div className="bg-secondary/15 rounded-3xl p-6 mx-5">
+        <p className="text-sm leading-6 font-semibold text-secondary">
           I am passionate about technology and always looking for new challenges
           to grow both personally and professionally. I love working in a team,
           learning new things and applying my knowledge to create innovative

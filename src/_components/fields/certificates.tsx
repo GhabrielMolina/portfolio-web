@@ -13,7 +13,7 @@ import { certificateOptions } from "@/_constants/certificate";
 
 const CertificatesField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-yellowPrimary/15 px-5">
+    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
       <TitleField title="Certificates" />
 
       <div className="flex justify-center pt-10">
@@ -24,15 +24,15 @@ const CertificatesField = () => {
                 key={index}
                 className="pl-1 md:basis-1/2 lg:basis-1/3"
               >
-                <Card className="bg-white bg-opacity-75 w-full rounded-xl p-5">
+                <Card className="bg-white dark:bg-card w-full rounded-xl p-5">
                   <CardContent className="flex items-start flex-col gap-4 p-0 ">
                     <div className="flex items-center justify-between w-full">
-                      <div className="flex items-center gap-3  bg-black pr-3  rounded-full">
-                        <div className="bg-white rounded-full">
+                      <div className="flex items-center gap-3  bg-primary pr-3  rounded-full">
+                        <div className="bg-secondary rounded-full">
                           <img src={certificate.imageURL} className="size-12" />
                         </div>
                         <div>
-                          <h3 className="text-yellowPrimary font-bold">
+                          <h3 className="text-destructive font-bold">
                             {certificate.business}
                           </h3>
                         </div>
@@ -45,14 +45,14 @@ const CertificatesField = () => {
                       />
                     </div>
 
-                    <h2 className="text-xl font-bold text-black text-left">
+                    <h2 className="text-xl font-bold text-primary text-left">
                       {certificate.title}
                     </h2>
 
                     <div className="flex items-center justify-between w-full">
-                      <div className="border-b border-solid border-yellowPrimary/15 w-full">
+                      <div className="border-b border-solid border-destructive/15 w-full">
                         <Button
-                          className="gap-2 bg-black rounded-full py-1 px-3 border border-solid border-yellowPrimary"
+                          className="text-secondary gap-2 bg-primary rounded-full py-1 px-3 border border-solid border-destructive"
                           asChild
                         >
                           <a href={certificate.link}>
@@ -62,7 +62,7 @@ const CertificatesField = () => {
                         </Button>
                       </div>
 
-                      <p className="w-full text-right font-medium text-black  shadow-yellowPrimary">
+                      <p className="w-full text-right font-medium text-primary">
                         {certificate.date}
                       </p>
                     </div>
