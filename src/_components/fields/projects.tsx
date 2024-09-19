@@ -32,7 +32,7 @@ const ProjectsField = () => {
         </Carousel>
 
         {/* GITHUB */}
-        <LinkButtonItem name="Back to Top" icon="ChevronsUp" url="#top" />
+        <LinkButtonItem name="Back to Top" icon="ChevronsUp" url="/" />
       </div>
     </div>
   );
