@@ -9,10 +9,20 @@ import {
 import { SunMoon } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./theme-provider";
+import { Link } from "@radix-ui/react-navigation-menu";
 
 export function Header() {
   const { toggleTheme } = useTheme();
-
+  const fields = [
+    "About Me",
+    "Education",
+    "Experience",
+    "Certificates",
+    "Skills",
+    "Projects",
+    "Connect With Me",
+    "Portifolio Made With",
+  ];
   return (
     <div className="p-5 w-full">
       <div className="bg-secondary rounded-full w-full flex items-center justify-between p-2">
@@ -46,8 +56,18 @@ export function Header() {
                   Menu
                 </NavigationMenuTrigger>
 
-                <NavigationMenuContent className=" bg-destructive">
-                  <NavigationMenuLink className="text-primary font-semibold"></NavigationMenuLink>
+                <NavigationMenuContent className="flex flex-col gap-1 px-1">
+                  {fields.map((field) => {
+                    return (
+                      <NavigationMenuLink className="text-secondary font-semibold border-b border-solid ">
+                        <Link
+                          href={`#${field.toLowerCase().replace(/\s+/g, "-")}`}
+                        >
+                          {field}
+                        </Link>
+                      </NavigationMenuLink>
+                    );
+                  })}
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>

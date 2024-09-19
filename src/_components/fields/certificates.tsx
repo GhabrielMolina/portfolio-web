@@ -13,7 +13,10 @@ import { certificateOptions } from "@/_constants/certificate";
 
 const CertificatesField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
+    <div
+      id="certificates"
+      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+    >
       <TitleField title="Certificates" />
 
       <div className="flex justify-center pt-10">

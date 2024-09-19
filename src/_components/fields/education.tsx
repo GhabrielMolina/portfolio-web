@@ -3,7 +3,10 @@ import TitleField from "../title-item";
 
 const EducationField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
+    <div
+      id="education"
+      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+    >
       <TitleField title="Education" />
 
       {/* CARDS */}

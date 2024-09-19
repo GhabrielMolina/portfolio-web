@@ -11,7 +11,10 @@ import LinkButtonItem from "../link-button-item";
 
 const ProjectsField = () => {
   return (
-    <div className="py-10 border-b border-solid border-y-destructive/15 px-5">
+    <div
+      id="projects"
+      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+    >
       <TitleField title="Projects I’ve Worked on" />
 
       <div className="flex flex-col items-center gap-20 pt-16">

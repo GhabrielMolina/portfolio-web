@@ -5,7 +5,7 @@ import { socialMidiaOptions } from "@/_constants/social-midia";
 const ConnectWithMeField = () => {
   return (
     <div
-      id="ConnectWithMe"
+      id="connect-with-me"
       className="py-10 border-b border-solid border-y-destructive/15 px-5"
     >
       <TitleField title="Connect With Me" />
