@@ -33,7 +33,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Button
             onClick={toggleTheme}
-            className="bg-primary rounded-full p-2 hover:bg-primary/50 delay-75"
+            className="bg-primary rounded-full p-2 hover:bg-primary/90 delay-75"
           >
             <SunMoon className="text-sm text-secondary" />
           </Button>
@@ -42,7 +42,7 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-primary rounded-full text-sm text-secondary hover:bg-primary/50 delay-75">
+                <NavigationMenuTrigger className="bg-primary rounded-full text-sm text-secondary hover:bg-primary/90 delay-75">
                   Menu
                 </NavigationMenuTrigger>
 
