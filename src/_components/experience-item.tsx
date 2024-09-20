@@ -20,9 +20,9 @@ const ExperienceItem = ({
   endDate,
 }: ExperienceItemProps) => {
   return (
-    <div className="bg-secondary/75 dark:bg-secondary/15 w-full rounded-xl">
+    <div className="bg-white/75 dark:bg-white w-full rounded-xl">
       <div className="flex flex-col items-end pl-[15%]">
-        <div className="flex items-center gap-3 w-full bg-primary rounded-full rounded-r-none">
+        <div className="flex items-center gap-3 w-full bg-bg rounded-full rounded-r-none">
           <div className="bg-secondary/90 rounded-full p-3">
             <img src={imageURL} className="size-12 object-contain" />
           </div>
@@ -38,7 +38,7 @@ const ExperienceItem = ({
           </div>
         </div>
 
-        <div className="flex items-center gap-2 bg-secondary/65 text-primary px-3 py-2 rounded-full rounded-r-none font-semibold">
+        <div className="flex items-center gap-2 bg-secondary text-primary px-3 py-2 rounded-full rounded-r-none font-semibold">
           <CalendarDays className="size-5" />
           <p className="text-sm">
             {startDate} - {endDate}

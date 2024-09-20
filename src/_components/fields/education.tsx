@@ -12,14 +12,14 @@ const EducationField = () => {
       {/* CARDS */}
       <div className="w-full flex flex-col px-5 pt-10 gap-4 ">
         {/* UNIVERSITY */}
-        <div className="bg-secondary/75 dark:bg-secondary/15 w-full rounded-xl p-4 space-y-4">
+        <div className="bg-white w-full rounded-xl p-4 space-y-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2 text-destructive bg-primary px-3 py-2 rounded-full font-semibold">
+            <div className="flex items-center gap-2 text-destructive bg-bg px-3 py-2 rounded-full font-semibold">
               <CalendarDays />
               <p>2023/2 - PRESENT</p>
             </div>
 
-            <div className="flex items-center gap-2 bg-primary px-3 py-2 rounded-full font-semibold">
+            <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-full font-semibold text-white">
               <GraduationCap />
               <p>Graduation</p>
             </div>

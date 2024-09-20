@@ -14,10 +14,11 @@ import { ThemeProvider } from "./_components/theme-provider";
 import "../app/globals.css";
 import "./index.css";
 
+// TODO: FIX BACKGROUND COLOR AND IMG IN LIGHT MODE
 export function App() {
   return (
     <ThemeProvider>
-      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain dark:bg-none">
+      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain">
         <Header />
         <ApresentationField />
       </div>

@@ -38,7 +38,6 @@ export function Header() {
           </h1>
         </div>
 
-        {/* TODO: FIX HOVER BUTTONS */}
         {/* LIGHT/DARK MODE && MENU INPUT*/}
         <div className="flex items-center gap-3">
           <Button
@@ -48,7 +47,6 @@ export function Header() {
             <SunMoon className="text-sm text-secondary" />
           </Button>
 
-          {/* TODO: Fazer menu de navegação */}
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>

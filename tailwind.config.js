@@ -6,6 +6,7 @@ module.exports = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./public/**/*.{svg}",
   ],
   prefix: "",
   theme: {
@@ -29,6 +30,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        bg: "var(--bg)",
         primary: "rgba(var(--primary))",
         secondary: {
           DEFAULT: "rgba(var(--secondary))",

@@ -26,7 +26,6 @@ const AboutMeField = () => {
       <TitleField title="About Me" />
 
       {/* I LOVE */}
-      {/* TODO: fix the overflow */}
       <div className="flex flex-col items-start w-full gap-3 lg:items-center">
         <div className="flex gap-2 items-center px-5">
           <Heart className=" fill-secondary" />

@@ -4,16 +4,16 @@ import LinkButtonItem from "../link-button-item";
 
 const ApresentationField = () => {
   const technologyWithClasses = [
-    { className: "absolute top-[25%] -left-[25%]" },
+    { className: "absolute top-[25%] -left-[30%]" },
     { className: "absolute top-[75%] -left-[35%]" },
     { className: "absolute top-[50%] -left-[50%]" },
     { className: "absolute top-[50%] -right-[45%]" },
-    { className: "absolute top-[75%] -right-[58%] " },
+    { className: "absolute top-[75%] -right-[58%]" },
     { className: "absolute top-[25%] -right-[40%]" },
   ];
 
   return (
-    <div className="flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-destructive/15 px-5">
+    <div className="dark:backdrop-blur-sm flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-destructive/15 px-5">
       <div className="flex gap-2 items-center bg-destructive/15 rounded-full py-1 px-3 border border-solid border-destructive mt-5 ">
         <img
           src="./icons/waving-hand.svg"

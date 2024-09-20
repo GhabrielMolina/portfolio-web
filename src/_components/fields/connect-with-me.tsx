@@ -15,16 +15,17 @@ const ConnectWithMeField = () => {
           const isEmail = social.title.includes("@");
           const href = isEmail ? `mailto:${social.title}` : social.url;
 
-          // TODO: FIX GITHUB ICON COLOR
           return (
             <Button
               key={index}
-              className={`flex items-center gap-2 bg-secondary rounded-full py-1 px-3 ${social.color}`}
+              className={`flex items-center gap-2 bg-white rounded-full py-1 px-3 ${social.color} hover:bg-white`}
               asChild
             >
               <a href={href} className="w-fit">
                 <img src={social.imageURL} className="w-7" />
-                <p className="font-semibold text-base">{social.title}</p>
+                <p className="font-semibold text-base hover:font-extrabold">
+                  {social.title}
+                </p>
               </a>
             </Button>
           );
