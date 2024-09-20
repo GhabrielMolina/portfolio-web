@@ -9,7 +9,6 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isLightMode, setIsLightMode] = useState(() => {
-    // Verifica o modo inicial de acordo com o localStorage ou inicia com tema claro
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "dark" ? true : false;
   });
