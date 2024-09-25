@@ -17,19 +17,21 @@ import { ThemeProvider } from "./_components/theme-provider";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
+      <div className="flex flex-col items-center justify-center">
       <Header />
-      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-contain">
+      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-auto">
         <ApresentationField />
       </div>
-      <AboutMeField />
+      {/* <AboutMeField />
       <EducationField />
-      <ExperienceField />
+      <ExperienceField /> */}
       {/* TODO: ADD CERTIFICATE CONTENT */}
-      <CertificatesField />
+      {/* <CertificatesField />
       <SkillsField />
       <ProjectsField />
       <ConnectWithMeField />
-      <PortifolioMadeWithField />
+      <PortifolioMadeWithField /> */}
+      </div>
     </ThemeProvider>
   </StrictMode>
 );

@@ -19,12 +19,12 @@ const LinkButtonItem = ({ name, url, icon }: LinkButtonProps) => {
   return (
     <div>
       <Button
-        className="flex gap-2 items-center text-destructive bg-destructive/15 rounded-full py-1 px-3 border border-solid border-destructive"
+        className="flex gap-2 items-center text-destructive bg-destructive/15 rounded-full py-1 sm:py-5 px-3 sm:px-4 border border-solid border-destructive"
         asChild
       >
         <a href={url}>
-          {IconComponent && <IconComponent />}
-          <p className="font-semibold text-base">{name}</p>
+          {IconComponent && <IconComponent className="sm:size-7" />}
+          <p className="font-semibold text-base sm:text-lg">{name}</p>
         </a>
       </Button>
     </div>

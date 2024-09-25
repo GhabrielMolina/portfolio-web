@@ -4,12 +4,18 @@ import LinkButtonItem from "../link-button-item";
 
 const ApresentationField = () => {
   const technologyWithClasses = [
-    { className: "absolute top-[25%] -left-[30%]" },
-    { className: "absolute top-[75%] -left-[35%]" },
-    { className: "absolute top-[50%] -left-[50%]" },
-    { className: "absolute top-[50%] -right-[45%]" },
-    { className: "absolute top-[75%] -right-[58%]" },
-    { className: "absolute top-[25%] -right-[40%]" },
+    { className: "absolute top-[63%] sm:top-[70%] -left-[45%] sm:-left-[40%]" },
+    { className: "absolute top-[35%] sm:top-[45%] -left-[45%] sm:-left-[40%]" },
+    { className: "absolute top-[8%] sm:top-[20%] -left-[35%] sm:-left-[30%]" },
+    {
+      className: "absolute top-[35%] sm:top-[70%] -right-[45%] sm:-right-[50%]",
+    },
+    {
+      className: "absolute top-[8%] sm:top-[20%] -right-[35%] sm:-right-[32%]",
+    },
+    {
+      className: "absolute top-[63%] sm:top-[45%] -right-[46%] sm:-right-[50%]",
+    },
   ];
 
   return (
@@ -18,11 +24,11 @@ const ApresentationField = () => {
         <img
           src="./icons/waving-hand.svg"
           alt="Waving Hand Emoji"
-          className="h-10"
+          className="h-12 sm:h-14"
         />
-        <h1 className="text-xl">
+        <h1 className="text-xl sm:text-2xl">
           Hi, I'm{" "}
-          <span className="font-bold text-2xl text-destructive">
+          <span className="font-bold text-2xl sm:text-4xl text-destructive">
             Ghabriel Molina
           </span>
         </h1>
@@ -33,7 +39,7 @@ const ApresentationField = () => {
         developer
       </h1>
 
-      <p className="text-md font-medium">
+      <p className="text-md sm:text-lg font-medium">
         I am an <span className="font-bold">Application Analyst intern</span>{" "}
         for front-office systems and work as a freelance{" "}
         <span className="font-bold">Full Stack Web Developer</span>. I have
@@ -49,13 +55,13 @@ const ApresentationField = () => {
 
       {/* MY PHOTO */}
       <div className="relative">
-        <div className="absolute -left-[10%] -bottom-[10%] w-fit flex items-center  justify-center">
-          <div className="w-64 h-64 border-4 shadow-lg shadow-secondary rounded-full"></div>
+        <div className="absolute -left-[29%] sm:-left-[18%] -bottom-[20%] sm:-bottom-[15%] w-fit flex items-center  justify-center">
+          <div className="w-64 sm:w-80 h-64 sm:h-80 border-4 sm:border-x-8 shadow-lg shadow-secondary rounded-full"></div>
         </div>
         <img
           src="./profile.png"
           alt="Ghabriel Molina Photo"
-          className="w-52 sm:w-60 md:w-72 object-cover relative z-10"
+          className="w-40 sm:w-60 md:w-72 object-cover relative z-10"
         />
 
         <div>
