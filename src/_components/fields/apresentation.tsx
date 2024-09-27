@@ -24,7 +24,7 @@ const ApresentationField = () => {
         <img
           src="./icons/waving-hand.svg"
           alt="Waving Hand Emoji"
-          className="h-12 sm:h-14"
+          className="h-16 sm:h-14"
         />
         <h1 className="text-xl sm:text-2xl">
           Hi, I'm{" "}

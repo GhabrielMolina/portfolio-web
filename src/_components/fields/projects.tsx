@@ -8,16 +8,40 @@ import {
 } from "../ui/carousel";
 import TitleField from "../title-item";
 import LinkButtonItem from "../link-button-item";
+import { useEffect, useState } from "react";
 
 const ProjectsField = () => {
+  const [title, setTitle] = useState('Projects');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 640) {
+        setTitle('Projects I’ve Worked on');
+      } else {
+        setTitle('Projects');
+      }
+    };
+
+    // Chame a função uma vez para definir o título inicial
+    handleResize();
+
+    // Adicione o listener de resize
+    window.addEventListener('resize', handleResize);
+
+    // Limpe o listener quando o componente for desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
     <div
       id="projects"
-      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+      className="py-20 border-b border-solid border-y-destructive/15"
     >
-      <TitleField title="Projects I’ve Worked on" />
+      <TitleField title={title}/>
 
-      <div className="flex flex-col items-center gap-20 pt-16">
+      <div className="flex flex-col items-center gap-20 pt-28 px-1">
         <Carousel
           opts={{
             align: "start",

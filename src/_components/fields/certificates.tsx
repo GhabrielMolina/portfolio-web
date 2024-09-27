@@ -15,13 +15,19 @@ const CertificatesField = () => {
   return (
     <div
       id="certificates"
-      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+      className="py-20 border-b border-solid border-y-destructive/15"
     >
       <TitleField title="Certificates" />
 
-      <div className="flex justify-center pt-10">
-        <Carousel className="w-full max-w-sm ">
-          <CarouselContent className="-ml-1 space-x-4">
+      <div className="flex justify-center pt-20 p-3">
+        <Carousel
+          className="w-full"
+          opts={{
+            align: "start",
+          }}
+          orientation="vertical"
+        >
+          <CarouselContent className="--mt-1 h-56">
             {certificateOptions.map((certificate, index) => (
               <CarouselItem
                 key={index}

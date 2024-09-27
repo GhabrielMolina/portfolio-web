@@ -22,15 +22,15 @@ createRoot(document.getElementById("root")!).render(
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-auto">
         <ApresentationField />
       </div>
-      {/* <AboutMeField />
+      <AboutMeField /> 
       <EducationField />
-      <ExperienceField /> */}
+      <ExperienceField />
       {/* TODO: ADD CERTIFICATE CONTENT */}
-      {/* <CertificatesField />
+      <CertificatesField />
       <SkillsField />
       <ProjectsField />
       <ConnectWithMeField />
-      <PortifolioMadeWithField /> */}
+      <PortifolioMadeWithField />
       </div>
     </ThemeProvider>
   </StrictMode>

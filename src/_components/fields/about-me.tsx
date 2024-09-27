@@ -20,7 +20,7 @@ const AboutMeField = () => {
 
   return (
     <div
-      className="mt-40 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15 px-5"
+      className="mt-36 sm:mt-0 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15"
       id="about-me"
     >
       <TitleField title="About Me" />
@@ -53,16 +53,19 @@ const AboutMeField = () => {
           learning new things and applying my knowledge to create innovative
           solutions.
           <br />
+          <br />
           I am 22 years old and I am a Computer Science student at PUCRS,
           currently in the 3rd semester. In addition, I was accepted into the
           Computer Engineering course at UFSC in 2020, which reflects my
           interest and dedication to the technology area from an early age.
+          <br />
           <br />I have solid programming experience, mastering technologies such
           as React.js, Java, C++, HTML5, CSS (Tailwind) and JavaScript. In
           addition, I have been deepening my knowledge in TypeScript and
           Node.js, and exploring Next.js and SQL. I always try to stay up to
           date and improve my skills, by participating in events such as
           FullStack Week and specialized courses at Alura.
+          <br />
           <br />
           My professional journey is marked by diverse experiences, ranging from
           the IT/Infrastructure sector at Factum to customer service at Núcleo

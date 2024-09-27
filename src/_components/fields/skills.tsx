@@ -7,7 +7,7 @@ const SkillsField = () => {
   return (
     <div
       id="skills"
-      className="py-10 border-b border-solid border-y-destructive/15 px-5"
+      className="py-10 border-b border-solid border-y-destructive/15"
     >
       <TitleField title="Skills" />
 

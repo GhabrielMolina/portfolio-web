@@ -1,4 +1,4 @@
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, MapPin, MoveRight } from "lucide-react";
 
 interface ExperienceItemProps {
   name: string;
@@ -21,11 +21,12 @@ const ExperienceItem = ({
 }: ExperienceItemProps) => {
   return (
     <div className="bg-white/75 dark:bg-white w-full rounded-xl">
-      <div className="flex flex-col items-end pl-[15%]">
+      <div className="flex flex-col items-end pl-[15%]  -mt-[0.6px] -mr-[0.4px]">
         <div className="flex items-center gap-3 w-full bg-bg rounded-full rounded-r-none">
           <div className="bg-secondary/90 rounded-full p-3">
             <img src={imageURL} className="size-12 object-contain" />
           </div>
+
           <div>
             <h3 className="text-destructive font-bold text-2xl">{name}</h3>
 
@@ -38,11 +39,16 @@ const ExperienceItem = ({
           </div>
         </div>
 
-        <div className="flex items-center gap-2 bg-secondary text-primary px-3 py-2 rounded-full rounded-r-none font-semibold">
-          <CalendarDays className="size-5" />
-          <p className="text-sm">
-            {startDate} - {endDate}
-          </p>
+        <div className="bg-secondary dark:bg-secondary/90 text-primary pr-1 pl-5  rounded-full rounded-r-none font-semibold">
+          <div className="flex items-center justify-start gap-3">
+            <CalendarDays className="size-7" />
+            <p className="text-sm">{startDate}</p>
+          </div>
+
+          <div className="flex items-center gap-3 justify-start ml-[2px]">
+            <MoveRight className="size-6" />
+            <p className="text-sm">{endDate}</p>
+          </div>
         </div>
       </div>
 
