@@ -17,7 +17,7 @@ import { ThemeProvider } from "./_components/theme-provider";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center md:max-w-72">
       <Header />
       <div className="bg-pattern bg-no-repeat h-screen bg-center bg-auto">
         <ApresentationField />

@@ -11,7 +11,7 @@ const EducationField = () => {
   return (
     <div
       id="education"
-      className="py-10 border-b border-solid border-y-destructive/15"
+      className="py-10 border-b border-solid border-y-destructive/15 w-full"
     >
       <TitleField title="Education" />
 

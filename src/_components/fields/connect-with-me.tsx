@@ -6,7 +6,7 @@ const ConnectWithMeField = () => {
   return (
     <div
       id="connect-with-me"
-      className="py-10 border-b border-solid border-y-destructive/15"
+      className="py-10 border-b border-solid border-y-destructive/15 w-full"
     >
       <TitleField title="Connect With Me" />
 

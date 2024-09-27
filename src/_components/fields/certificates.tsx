@@ -15,7 +15,7 @@ const CertificatesField = () => {
   return (
     <div
       id="certificates"
-      className="py-20 border-b border-solid border-y-destructive/15"
+      className="py-20 border-b border-solid border-y-destructive/15 w-full"
     >
       <TitleField title="Certificates" />
 

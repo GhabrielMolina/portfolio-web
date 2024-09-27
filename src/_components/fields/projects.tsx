@@ -37,7 +37,7 @@ const ProjectsField = () => {
   return (
     <div
       id="projects"
-      className="py-20 border-b border-solid border-y-destructive/15"
+      className="py-20 border-b border-solid border-y-destructive/15 w-full"
     >
       <TitleField title={title}/>
 
