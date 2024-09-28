@@ -35,11 +35,13 @@ export function Header() {
             src="./logo/logo.png"
             alt="GH Logo"
             className="h-8 object-contain bg-black rounded-full
-            sm:h-12"
+            sm:h-12
+            md:h-16"
           />
           <h1
             className="uppercase text-sm text-primary
-            sm:text-lg"
+            sm:text-lg
+            md:text-xl"
           >
             Ghabriel<span className="font-bold">Molina</span>
           </h1>
@@ -48,16 +50,19 @@ export function Header() {
         {/* LIGHT/DARK MODE && MENU INPUT*/}
         <div
           className="flex items-center gap-1
-          sm:gap-3"
+          sm:gap-3
+          md:gap-4"
         >
           <Button
             onClick={toggleTheme}
             className="bg-primary p-1 rounded-full hover:bg-primary/90 delay-75
-            sm:p-4"
+            sm:p-4
+            md:p-6"
           >
             <SunMoon
               className="size-5 text-secondary
-              sm:size-8"
+              sm:size-8
+              md:size-9"
             />
           </Button>
 
@@ -66,7 +71,8 @@ export function Header() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger
                   className="bg-primary p-2 h-9 font-semibold rounded-full text-xs text-secondary hover:bg-primary/90 delay-75
-                  sm:p-4 sm:h-10 sm:text-base"
+                  sm:p-4 sm:h-10 sm:text-base
+                  md:p-5 md:h-12 md:text-lg"
                 >
                   Menu
                 </NavigationMenuTrigger>
@@ -76,7 +82,8 @@ export function Header() {
                     return (
                       <NavigationMenuLink
                         className="text-secondary font-semibold border-b border-solid 
-                        sm:text-lg"
+                        sm:text-lg
+                        md:text-xl"
                       >
                         <Link
                           href={`#${field.toLowerCase().replace(/\s+/g, "-")}`}

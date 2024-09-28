@@ -25,11 +25,13 @@ const ConnectWithMeField = () => {
                 <img
                   src={social.imageURL}
                   className="w-7
-                  sm:w-8"
+                  sm:w-8
+                  md:w-9"
                 />
                 <p
                   className="font-semibold text-base hover:font-extrabold
-                  sm:text-lg"
+                  sm:text-lg
+                  md:text-xl"
                 >
                   {social.title}
                 </p>

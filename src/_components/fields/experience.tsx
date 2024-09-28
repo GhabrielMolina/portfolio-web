@@ -13,7 +13,8 @@ const ExperienceField = () => {
       {/* CARDS */}
       <div
         className="w-full flex flex-col px-3 pt-10 gap-10
-        sm:px-20"
+        sm:px-20
+        md:px-32"
       >
         {experienceOptions.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />

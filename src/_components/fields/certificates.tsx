@@ -21,7 +21,8 @@ const CertificatesField = () => {
 
       <div
         className="flex justify-center pt-20 p-3
-        sm:px-20"
+        sm:px-20
+        md:px-32"
       >
         <Carousel
           className="w-full"
@@ -30,14 +31,20 @@ const CertificatesField = () => {
           }}
           orientation="vertical"
         >
-          <CarouselContent className="--mt-1 h-56">
+          <CarouselContent
+            className="--mt-1 h-56
+            md:h-64"
+          >
             {certificateOptions.map((certificate, index) => (
               <CarouselItem
                 key={index}
                 className="pl-1 md:basis-1/2 lg:basis-1/3"
               >
                 <Card className="bg-white dark:bg-card w-full rounded-xl p-5">
-                  <CardContent className="flex items-start flex-col gap-4 p-0 ">
+                  <CardContent
+                    className="flex items-start flex-col gap-4 p-0
+                    md:gap-5"
+                  >
                     <div className="flex items-end justify-between w-full">
                       <div className="flex items-center gap-3  bg-primary pr-3  rounded-full">
                         <div className="bg-secondary rounded-full">
@@ -67,7 +74,8 @@ const CertificatesField = () => {
 
                     <h2
                       className="text-xl font-bold text-primary text-left
-                      sm:text-2xl"
+                      sm:text-2xl
+                      md:text-3xl"
                     >
                       {certificate.title}
                     </h2>
@@ -79,10 +87,14 @@ const CertificatesField = () => {
                           asChild
                         >
                           <a href={certificate.link}>
-                            <Eye className="sm:size-7" />
+                            <Eye
+                              className="sm:size-7
+                              md:size-8"
+                            />
                             <p
                               className="font-semibold text-base
-                              sm:text-lg"
+                              sm:text-lg
+                              md:text-xl"
                             >
                               View
                             </p>
@@ -92,7 +104,8 @@ const CertificatesField = () => {
 
                       <p
                         className="w-full text-right font-medium text-primary
-                        sm:text-lg"
+                        sm:text-lg
+                        md:text-xl"
                       >
                         {certificate.date}
                       </p>

@@ -11,7 +11,10 @@ const SkillsField = () => {
     >
       <TitleField title="Skills" />
 
-      <div className="flex flex-col gap-5 items-center">
+      <div
+        className="flex flex-col gap-5 items-center
+        md:px-20"
+      >
         {/* FRONTEND */}
         <div className="pt-5">
           <TitleField title="Frontend | Use" />

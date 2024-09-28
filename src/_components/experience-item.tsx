@@ -21,7 +21,7 @@ const ExperienceItem = ({
 }: ExperienceItemProps) => {
   return (
     <div className="bg-white/75 dark:bg-white rounded-xl">
-      <div className="flex flex-col items-end pl-[15%]  -mt-[0.6px] -mr-[0.4px]">
+      <div className="flex flex-col items-end pl-[15%] -mt-[0.6px] -mr-[0.4px]">
         <div className="flex items-center gap-3 w-full bg-bg rounded-full rounded-r-none">
           <div className="bg-secondary/90 rounded-full p-3">
             <img
@@ -97,18 +97,23 @@ const ExperienceItem = ({
           {position}
         </h2>
 
-        <div className="space-y-1">
+        <div
+          className="space-y-1
+          md:space-y-4"
+        >
           {description.map((desc, index) => (
             <div key={index} className="flex gap-2 items-center text-black">
               <img
                 src="/icons/right-arrow.svg"
                 className="min-w-fit size-8
-                sm:size-10"
+                sm:size-10
+                md:size-12"
               />
 
               <p
                 className="text-sm font-medium
-                sm:text-base"
+                sm:text-base
+                md:text-lg"
               >
                 {desc}
               </p>

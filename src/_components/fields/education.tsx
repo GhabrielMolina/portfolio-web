@@ -25,10 +25,14 @@ const EducationField = () => {
             sm:gap-5"
           >
             <div className="flex items-center gap-2 bg-black px-3 py-2 rounded-lg font-semibold text-white">
-              <GraduationCap className="sm:size-7" />
+              <GraduationCap
+                className="sm:size-7
+                md:size-8"
+              />
               <p
                 className="text-lg 
-                sm:text-xl"
+                sm:text-xl
+                md:text-2xl"
               >
                 Graduation
               </p>
@@ -36,7 +40,8 @@ const EducationField = () => {
 
             <h2
               className="text-2xl font-bold text-black
-              sm:text-3xl sm:text-center"
+              sm:text-3xl sm:text-center
+              md:text-4xl"
             >
               Bachelor of Computer Science
             </h2>
@@ -45,21 +50,25 @@ const EducationField = () => {
           <div className="flex flex-col items-center text-destructive bg-bg px-5 py-5 rounded-lg font-semibold">
             <CalendarDays
               className="size-7 mb-1 
-              sm:size-8"
+              sm:size-8
+              md:size-9"
             />
             <p
               className="text-center 
-              sm:text-lg"
+              sm:text-lg
+              md:text-xl"
             >
               2023/2
             </p>
             <ChevronDown
               className="size-5 
-              sm:size-6"
+              sm:size-6
+              md:size-7"
             />
             <p
               className="text-center 
-              sm:text-lg"
+              sm:text-lg
+              md:text-xl"
             >
               PRESENT
             </p>
@@ -71,12 +80,14 @@ const EducationField = () => {
             <div className="rounded-full ">
               <School
                 className="fill-destructive text-primary size-7
-                sm:size-9"
+                sm:size-9
+                md:size-10"
               />
             </div>
             <p
               className="text-black
-              sm:text-lg"
+              sm:text-lg
+              md:text-xl"
             >
               Pontifical Catholic University of Rio Grande do Sul
             </p>
@@ -86,12 +97,14 @@ const EducationField = () => {
             <div className="rounded-full">
               <MapPin
                 className="fill-destructive text-primary size-7
-                sm:size-9"
+                sm:size-9
+                md:size-10"
               />
             </div>
             <p
               className="text-black
-              sm:text-lg"
+              sm:text-lg
+              md:text-xl"
             >
               Porto Alegre, RS, Brazil
             </p>

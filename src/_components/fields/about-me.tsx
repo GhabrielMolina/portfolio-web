@@ -28,11 +28,22 @@ const AboutMeField = () => {
       {/* I LOVE */}
       <div className="flex flex-col items-start w-full gap-3 lg:items-center">
         <div className="flex gap-2 items-center px-5">
-          <Heart className=" fill-secondary" />
+          <Heart
+            className=" fill-secondary
+            md:size-7"
+          />
 
           <div className="relative text-center whitespace-nowrap">
-            <h2 className="opacity-10 text-destructive text-3xl">I Love</h2>
-            <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl text-destructive">
+            <h2
+              className="opacity-10 text-destructive text-3xl
+              md:text-4xl"
+            >
+              I Love
+            </h2>
+            <h3
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl text-destructive
+              md:text-3xl"
+            >
               I Love
             </h3>
           </div>
@@ -47,7 +58,10 @@ const AboutMeField = () => {
 
       {/* README */}
       <div className="bg-secondary/15 rounded-3xl p-6 mx-5">
-        <p className="text-sm leading-6 font-semibold text-secondary">
+        <p
+          className="text-sm leading-6 font-semibold text-secondary
+          md:text-lg"
+        >
           I am passionate about technology and always looking for new challenges
           to grow both personally and professionally. I love working in a team,
           learning new things and applying my knowledge to create innovative
