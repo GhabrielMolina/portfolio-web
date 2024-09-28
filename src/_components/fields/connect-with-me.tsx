@@ -22,8 +22,15 @@ const ConnectWithMeField = () => {
               asChild
             >
               <a href={href} className="w-fit">
-                <img src={social.imageURL} className="w-7" />
-                <p className="font-semibold text-base hover:font-extrabold">
+                <img
+                  src={social.imageURL}
+                  className="w-7
+                  sm:w-8"
+                />
+                <p
+                  className="font-semibold text-base hover:font-extrabold
+                  sm:text-lg"
+                >
                   {social.title}
                 </p>
               </a>

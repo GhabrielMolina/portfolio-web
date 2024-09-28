@@ -19,7 +19,10 @@ const CertificatesField = () => {
     >
       <TitleField title="Certificates" />
 
-      <div className="flex justify-center pt-20 p-3">
+      <div
+        className="flex justify-center pt-20 p-3
+        sm:px-20"
+      >
         <Carousel
           className="w-full"
           opts={{
@@ -35,13 +38,20 @@ const CertificatesField = () => {
               >
                 <Card className="bg-white dark:bg-card w-full rounded-xl p-5">
                   <CardContent className="flex items-start flex-col gap-4 p-0 ">
-                    <div className="flex items-center justify-between w-full">
+                    <div className="flex items-end justify-between w-full">
                       <div className="flex items-center gap-3  bg-primary pr-3  rounded-full">
                         <div className="bg-secondary rounded-full">
-                          <img src={certificate.imageURL} className="size-12" />
+                          <img
+                            src={certificate.imageURL}
+                            className="size-12
+                            sm:size-16"
+                          />
                         </div>
                         <div>
-                          <h3 className="text-destructive font-bold">
+                          <h3
+                            className="text-destructive font-bold
+                            sm:text-lg"
+                          >
                             {certificate.business}
                           </h3>
                         </div>
@@ -50,11 +60,15 @@ const CertificatesField = () => {
                       <img
                         src="./icons/certificate.svg"
                         alt="Certificate"
-                        className="size-10"
+                        className="size-10
+                        sm:size-14"
                       />
                     </div>
 
-                    <h2 className="text-xl font-bold text-primary text-left">
+                    <h2
+                      className="text-xl font-bold text-primary text-left
+                      sm:text-2xl"
+                    >
                       {certificate.title}
                     </h2>
 
@@ -65,13 +79,21 @@ const CertificatesField = () => {
                           asChild
                         >
                           <a href={certificate.link}>
-                            <Eye />
-                            <p className="font-semibold text-base">View</p>
+                            <Eye className="sm:size-7" />
+                            <p
+                              className="font-semibold text-base
+                              sm:text-lg"
+                            >
+                              View
+                            </p>
                           </a>
                         </Button>
                       </div>
 
-                      <p className="w-full text-right font-medium text-primary">
+                      <p
+                        className="w-full text-right font-medium text-primary
+                        sm:text-lg"
+                      >
                         {certificate.date}
                       </p>
                     </div>

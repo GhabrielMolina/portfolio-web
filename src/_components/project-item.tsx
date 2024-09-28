@@ -57,14 +57,18 @@ const ProjectItem = ({
 
                   <DialogContent className="w-[80%] h-full bg-black/50 border-none rounded-xl overflow-y-auto [&::-webkit-scrollbar]:hidden">
                     <DialogHeader>
-                      <DialogTitle className="text-2xl text-white">
+                      <DialogTitle
+                        className="text-2xl text-white
+                        sm:text-3xl"
+                      >
                         {title}
                       </DialogTitle>
                     </DialogHeader>
                     {description.map((desc, index) => (
                       <DialogDescription
                         key={index}
-                        className="text-md font-semibold -tracking-tight"
+                        className="text-md font-semibold -tracking-tight
+                        sm:text-lg"
                       >
                         {desc}
                       </DialogDescription>
@@ -74,12 +78,18 @@ const ProjectItem = ({
               </div>
 
               <div className="pt-4">
-                <p className="text-xs font-light text-white">Worked on</p>
+                <p
+                  className="text-xs font-light text-white
+                  sm:text-sm"
+                >
+                  Worked on
+                </p>
                 <div className="flex gap-2 items-center pt-1">
                   {workedOn.map((work, index) => (
                     <p
                       key={index}
-                      className="bg-white/70 px-1.5 rounded-full text-sm font-bold dark:font-semibold"
+                      className="bg-white/70 px-1.5 rounded-full text-sm font-bold dark:font-semibold
+                      sm:text-base"
                     >
                       {work}
                     </p>
@@ -88,7 +98,10 @@ const ProjectItem = ({
               </div>
 
               <div className="py-4">
-                <p className="text-xs font-light text-white">
+                <p
+                  className="text-xs font-light text-white
+                  sm:text-sm"
+                >
                   Technologies I have used
                 </p>
 

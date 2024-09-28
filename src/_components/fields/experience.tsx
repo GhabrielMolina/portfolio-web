@@ -11,7 +11,10 @@ const ExperienceField = () => {
       <TitleField title="Experience" />
 
       {/* CARDS */}
-      <div className="w-full flex flex-col px-3 pt-10 gap-10">
+      <div
+        className="w-full flex flex-col px-3 pt-10 gap-10
+        sm:px-20"
+      >
         {experienceOptions.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />
         ))}
