@@ -42,7 +42,7 @@ export const projectOptions: ProjectOption[] = [
     imageURL: "./projects/plann-er-project.png",
     workedOn: ["Website"],
     technologies: ["ReactJS", "Typescript", "NodeJS", "TailwindCSS", "Prisma"],
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7218774689823748096/",
+    link: "https://github.com/GhabrielMolina/NLW-plann.er",
   },
   {
     title: "FSW-FOOD",
@@ -60,5 +60,30 @@ export const projectOptions: ProjectOption[] = [
     workedOn: ["Website", "Deploy"],
     technologies: ["ReactJS", "Typescript", "NextJS", "TailwindCSS", "Prisma"],
     link: "https://fullstackweek-foods-brown.vercel.app/",
+  },
+  {
+    title: "pass.in",
+    description: [
+      "The application consists of a list of participants registered for a specific event, where all the data from the back-end is presented.",
+      "Regarding the database, documentation was created for better API access and Prisma technologies were used.",
+      "The front-end was developed using React.js and TypeScript, with TailwindCSS for styling.",
+      "The back-end is built with Node.js, ensuring efficient communication with the database.",
+    ],
+    imageURL: "./projects/pass-in-project.png",
+    workedOn: ["Website"],
+    technologies: ["ReactJS", "Typescript", "NodeJS", "TailwindCSS", "Prisma"],
+    link: "https://github.com/GhabrielMolina/Rocketseat_NLW-Pass",
+  },
+  {
+    title: "Dev Festival",
+    description: [
+      "Dev Festival 2022 is a Front End Web and Mobile application built during HTML / CSS / JS studies, in order to exercise knowledge only.",
+      "The application consists of a music festival website, where there is a home page showing a little about the event, a ticket purchase page that interacts with the user, storing their name, email and how many tickets purchased, there is also a button that enables LightMode/DarkMode and supports mobile, tablet or computer versions.",
+      "The project was developed using HTML, CSS and JavaScript, and was deployed on GitHub Pages.",
+    ],
+    imageURL: "./projects/dev-festival-project.jpeg",
+    workedOn: ["Website", "Deploy"],
+    technologies: ["HTML5", "CSS", "Javascript"],
+    link: "https://ghabrielmolina.github.io/DevFestival-WebSite/",
   },
 ];
