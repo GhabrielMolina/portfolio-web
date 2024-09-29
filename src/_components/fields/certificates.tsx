@@ -36,7 +36,8 @@ const CertificatesField = () => {
         >
           <CarouselContent
             className="--mt-1 h-56
-            md:h-64"
+            md:h-64
+            lg:h-80"
           >
             {certificateOptions.map((certificate, index) => (
               <CarouselItem

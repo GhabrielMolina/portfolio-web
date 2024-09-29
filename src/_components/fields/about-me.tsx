@@ -33,7 +33,7 @@ const AboutMeField = () => {
         className="flex flex-col items-start w-full gap-3 
         lg:pl-20
         xl:pl-44
-        2xl:pl-[20%]"
+        2xl:px-[20%]"
       >
         <div
           className="flex gap-2 items-center px-5
