@@ -22,7 +22,7 @@ module.exports = {
         sans: "Poppins",
       },
       backgroundImage: {
-        pattern: "url(bg-vector.svg)",
+        
       },
       colors: {
         border: "hsl(var(--border))",

@@ -58,7 +58,12 @@
     --chart-5: 340 75% 55%;
     --bg: rgb(126, 255, 245);
   }
+
+  .bg-pattern {
+    background-image: url('/bg-vector.svg');
+  }
 }
+
 
 @layer base {
   * {
