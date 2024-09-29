@@ -20,14 +20,25 @@ const AboutMeField = () => {
 
   return (
     <div
-      className="mt-36 sm:mt-0 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15"
+      className="mt-36 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15
+      sm:mt-0
+      lg:mt-32
+      xl:mt-36"
       id="about-me"
     >
       <TitleField title="About Me" />
 
       {/* I LOVE */}
-      <div className="flex flex-col items-start w-full gap-3 lg:items-center">
-        <div className="flex gap-2 items-center px-5">
+      <div
+        className="flex flex-col items-start w-full gap-3 
+        lg:pl-20
+        xl:pl-44
+        2xl:pl-[20%]"
+      >
+        <div
+          className="flex gap-2 items-center px-5
+          lg"
+        >
           <Heart
             className=" fill-secondary
             md:size-7"
@@ -49,7 +60,10 @@ const AboutMeField = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 pl-5 w-full overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+        <div
+          className="flex items-center gap-3 pl-5 w-full overflow-x-scroll [&::-webkit-scrollbar]:hidden
+          lg:pl-0"
+        >
           {loves.map((love) => (
             <Loves key={love.name} name={love.name} src={love.src} />
           ))}
@@ -57,7 +71,12 @@ const AboutMeField = () => {
       </div>
 
       {/* README */}
-      <div className="bg-secondary/15 rounded-3xl p-6 mx-5">
+      <div
+        className="bg-secondary/15 rounded-3xl p-6 mx-5
+        lg:mx-20
+        xl:mx-44
+        2xl:mx-[20%]"
+      >
         <p
           className="text-sm leading-6 font-semibold text-secondary
           md:text-lg"

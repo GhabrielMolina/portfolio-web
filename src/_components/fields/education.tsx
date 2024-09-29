@@ -17,7 +17,10 @@ const EducationField = () => {
 
       <div
         className="flex flex-col mt-10 mx-3 gap-4 px-3 py-2 bg-white rounded-xl space-y-4
-        sm:mx-20 sm:gap-1"
+        sm:mx-20 sm:gap-1
+        lg:mx-32
+        xl:mx-80
+        2xl:mx-[35%]"
       >
         <div className="flex justify-between items-start gap-1">
           <div

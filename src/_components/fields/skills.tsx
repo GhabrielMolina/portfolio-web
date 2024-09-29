@@ -13,7 +13,8 @@ const SkillsField = () => {
 
       <div
         className="flex flex-col gap-5 items-center
-        md:px-20"
+        md:px-20
+        xl:px-60"
       >
         {/* FRONTEND */}
         <div className="pt-5">

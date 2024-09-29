@@ -27,14 +27,16 @@ const ExperienceItem = ({
             <img
               src={imageURL}
               className="size-12 object-contain
-              sm:size-16"
+              sm:size-16
+              xl:size-20"
             />
           </div>
 
           <div>
             <h3
               className="text-destructive font-bold text-2xl
-              sm:text-3xl"
+              sm:text-3xl
+              xl:text-4xl"
             >
               {name}
             </h3>
@@ -43,12 +45,14 @@ const ExperienceItem = ({
               <div className="bg-secondary/15 rounded-full p-1">
                 <MapPin
                   className="size-3 fill-primary
-                  sm:size-5"
+                  sm:size-5
+                  xl:size-6"
                 />
               </div>
               <p
                 className="text-xs font-light
-                sm:text-sm"
+                sm:text-sm
+                xl:text-base"
               >
                 {locale}
               </p>
@@ -60,11 +64,13 @@ const ExperienceItem = ({
           <div className="flex items-center justify-start gap-3">
             <CalendarDays
               className="size-7
-              sm:size-8"
+              sm:size-8
+              xl:size-9"
             />
             <p
               className="text-sm
-              sm:text-base"
+              sm:text-base
+              xl:text-lg"
             >
               {startDate}
             </p>
@@ -72,15 +78,18 @@ const ExperienceItem = ({
 
           <div
             className="flex items-center gap-3 justify-start ml-[2px]
-            sm:ml-[3px]"
+            sm:ml-[3px]
+            xl:ml-[4px]"
           >
             <MoveRight
               className="size-6
-              sm:size-7"
+              sm:size-7
+              xl:size-8"
             />
             <p
               className="text-sm
-              sm:text-base"
+              sm:text-base
+              xl:text-lg"
             >
               {endDate}
             </p>
@@ -89,10 +98,14 @@ const ExperienceItem = ({
       </div>
 
       {/* CONTENT */}
-      <div className="p-4">
+      <div
+        className="p-4
+        xl:px-8"
+      >
         <h2
           className="text-2xl font-bold text-black pb-3
-          sm:text-3xl"
+          sm:text-3xl
+          xl:text-4xl"
         >
           {position}
         </h2>

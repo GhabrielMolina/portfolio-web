@@ -18,7 +18,9 @@ const ConnectWithMeField = () => {
           return (
             <Button
               key={index}
-              className={`flex items-center gap-2 bg-white rounded-full py-1 px-3 ${social.color} hover:bg-white`}
+              className={`flex items-center gap-2 bg-white rounded-full py-1 px-3 hover:bg-white
+              2xl:gap-3 2xl:py-7 2xl:px-5
+              ${social.color}`}
               asChild
             >
               <a href={href} className="w-fit">
@@ -26,12 +28,14 @@ const ConnectWithMeField = () => {
                   src={social.imageURL}
                   className="w-7
                   sm:w-8
-                  md:w-9"
+                  md:w-9
+                  2xl:w-12"
                 />
                 <p
                   className="font-semibold text-base hover:font-extrabold
                   sm:text-lg
-                  md:text-xl"
+                  md:text-xl
+                  2xl:text-2xl"
                 >
                   {social.title}
                 </p>

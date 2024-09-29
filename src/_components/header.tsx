@@ -26,7 +26,10 @@ export function Header() {
   return (
     <div
       className="pt-5 px-2 w-full
-      sm:pt-8 sm:p-5"
+      sm:pt-8 sm:px-5
+      lg:py-10 lg:px-10
+      xl:py-12 xl:px-40
+      2xl:py-16 2xl:px-[20%]"
     >
       <div className="bg-secondary rounded-full w-full flex items-center justify-between p-2">
         {/* LOGO && NAME  */}
@@ -36,12 +39,14 @@ export function Header() {
             alt="GH Logo"
             className="h-8 object-contain bg-black rounded-full
             sm:h-12
-            md:h-16"
+            md:h-16
+            lg:h-20"
           />
           <h1
             className="uppercase text-sm text-primary
             sm:text-lg
-            md:text-xl"
+            md:text-xl
+            lg:text-2xl"
           >
             Ghabriel<span className="font-bold">Molina</span>
           </h1>
@@ -51,18 +56,21 @@ export function Header() {
         <div
           className="flex items-center gap-1
           sm:gap-3
-          md:gap-4"
+          md:gap-4
+          lg:gap-5"
         >
           <Button
             onClick={toggleTheme}
             className="bg-primary p-1 rounded-full hover:bg-primary/90 delay-75
             sm:p-4
-            md:p-6"
+            md:p-6
+            lg:p-8"
           >
             <SunMoon
               className="size-5 text-secondary
               sm:size-8
-              md:size-9"
+              md:size-9
+              lg:size-10"
             />
           </Button>
 
@@ -72,7 +80,8 @@ export function Header() {
                 <NavigationMenuTrigger
                   className="bg-primary p-2 h-9 font-semibold rounded-full text-xs text-secondary hover:bg-primary/90 delay-75
                   sm:p-4 sm:h-10 sm:text-base
-                  md:p-5 md:h-12 md:text-lg"
+                  md:p-5 md:h-12 md:text-lg
+                  lg:p-6 lg:h-16 lg:text-xl"
                 >
                   Menu
                 </NavigationMenuTrigger>
@@ -83,7 +92,8 @@ export function Header() {
                       <NavigationMenuLink
                         className="text-secondary font-semibold border-b border-solid 
                         sm:text-lg
-                        md:text-xl"
+                        md:text-xl
+                        lg:text-2xl"
                       >
                         <Link
                           href={`#${field.toLowerCase().replace(/\s+/g, "-")}`}

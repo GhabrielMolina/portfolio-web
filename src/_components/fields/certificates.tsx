@@ -22,7 +22,10 @@ const CertificatesField = () => {
       <div
         className="flex justify-center pt-20 p-3
         sm:px-20
-        md:px-32"
+        md:px-32
+        lg:px-48
+        xl:px-96
+        2xl:px-[35%]"
       >
         <Carousel
           className="w-full"

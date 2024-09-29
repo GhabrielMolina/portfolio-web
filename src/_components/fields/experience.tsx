@@ -14,7 +14,9 @@ const ExperienceField = () => {
       <div
         className="w-full flex flex-col px-3 pt-10 gap-10
         sm:px-20
-        md:px-32"
+        md:px-32
+        xl:px-72
+        2xl:px-[35%]"
       >
         {experienceOptions.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />
