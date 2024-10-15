@@ -15,10 +15,10 @@ const TechnologyItem = ({ title, imageURL, className }: TechnologyProps) => {
     >
       <img
         src={`${imageURL}`}
-        className="size-5 w-fit rounded-full px-0
-        sm:size-8
-        md:size-10
-        lg:size-12"
+        className="w-5 rounded-full px-0
+        sm:w-8
+        md:w-10
+        lg:w-12"
       />
       <p
         className="font-medium text-black text-xs 
