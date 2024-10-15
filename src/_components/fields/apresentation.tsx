@@ -32,7 +32,7 @@ const ApresentationField = () => {
 
   return (
     <div
-      className="dark:backdrop-blur-sm flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-destructive/15 px-5
+      className="dark:backdrop-blur-sm flex items-center overflow-y-hidden flex-col text-center gap-4 w-full border-b border-solid border-destructive/15 px-5 
       lg:px-20 lg:gap-8
       2xl:px-[20%]"
     >
@@ -109,6 +109,7 @@ const ApresentationField = () => {
           md:w-72
           lg:w-80"
         />
+
 
         <div>
           {technologyWithClasses.map((techClass, index) =>

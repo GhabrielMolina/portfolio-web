@@ -19,7 +19,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider>
       <div className="flex flex-col items-center justify-center">
       <Header />
-      <div className="bg-pattern bg-no-repeat h-screen bg-center bg-auto md:h-fit">
+      <div className="bg-pattern bg-no-repeat bg-center bg-auto md:h-fit overflow-hidden">
         <ApresentationField />
       </div>
       <AboutMeField /> 
