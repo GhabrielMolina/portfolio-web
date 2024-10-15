@@ -7,7 +7,7 @@ interface TechnologyProps {
 const TechnologyItem = ({ title, imageURL, className }: TechnologyProps) => {
   return (
     <div
-      className={`bg-white px-1 py-1.5 rounded-full flex items-center gap-1
+      className={`bg-white px-1 py-1.5 rounded-full flex items-center gap-1 w-fit
       sm:gap-2 sm:px-2
       md:gap-3 md:px-3
       lg:gap-4 lg:px-4
