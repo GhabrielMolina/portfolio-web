@@ -15,7 +15,7 @@ const TechnologyItem = ({ title, imageURL, className }: TechnologyProps) => {
     >
       <img
         src={`${imageURL}`}
-        className="size-5 w-fit rounded-full
+        className="size-5 w-fit rounded-full px-0
         sm:size-8
         md:size-10
         lg:size-12"
