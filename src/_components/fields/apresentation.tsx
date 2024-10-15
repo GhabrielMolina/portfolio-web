@@ -87,7 +87,7 @@ const ApresentationField = () => {
       />
 
       {/* MY PHOTO */}
-      <div className="relative">
+      <div className="relative mt-10">
         <div
           className="absolute -left-[29%] -bottom-[20%] w-fit flex items-center justify-center
           sm:-left-[18%] sm:-bottom-[15%]

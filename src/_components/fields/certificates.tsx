@@ -35,8 +35,7 @@ const CertificatesField = () => {
           orientation="vertical"
         >
           <CarouselContent
-            className="--mt-1 h-56
-            md:h-64
+            className="--mt-1 h-64
             lg:h-80"
           >
             {certificateOptions.map((certificate, index) => (
@@ -49,7 +48,7 @@ const CertificatesField = () => {
                     className="flex items-start flex-col gap-4 p-0
                     md:gap-5"
                   >
-                    <div className="flex items-end justify-between w-full">
+                    <div className="flex items-end justify-between w-full gap-1">
                       <div className="flex items-center gap-3  bg-primary pr-3  rounded-full">
                         <div className="bg-secondary rounded-full">
                           <img
