@@ -20,7 +20,7 @@ const AboutMeField = () => {
 
   return (
     <div
-      className="mt-36 w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15
+      className="w-full flex flex-col items-center gap-5 py-10 border-b border-solid border-y-destructive/15
       sm:mt-0
       lg:mt-32
       xl:mt-36"
