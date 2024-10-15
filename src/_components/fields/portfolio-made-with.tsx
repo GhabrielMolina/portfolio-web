@@ -3,15 +3,15 @@ import Technology from "../technology-item";
 import { technologyOptions } from "@/_constants/technology";
 import { useEffect, useState } from "react";
 
-const PortifolioMadeWithField = () => {
-  const [title, setTitle] = useState('Portifolio');
+const PortfolioMadeWithField = () => {
+  const [title, setTitle] = useState('Portfolio');
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 640) {
-        setTitle('Portifolio Made With');
+        setTitle('Portfolio Made With');
       } else {
-        setTitle('Portifolio');
+        setTitle('Portfolio');
       }
     };
 
@@ -29,7 +29,7 @@ const PortifolioMadeWithField = () => {
   
   return (
     <div
-      id="portifolio-made-with"
+      id="portfolio-made-with"
       className="py-10 border-b border-solid border-y-destructive/15 w-full"
     >
       <TitleField title={title} />
@@ -51,4 +51,4 @@ const PortifolioMadeWithField = () => {
   );
 };
 
-export default PortifolioMadeWithField;
+export default PortfolioMadeWithField;

@@ -8,7 +8,7 @@ import CertificatesField from "./_components/fields/certificates";
 import ConnectWithMeField from "./_components/fields/connect-with-me";
 import EducationField from "./_components/fields/education";
 import ExperienceField from "./_components/fields/experience";
-import PortifolioMadeWithField from "./_components/fields/portifolio-made-with";
+import PortfolioMadeWithField from "./_components/fields/portfolio-made-with";
 import ProjectsField from "./_components/fields/projects";
 import SkillsField from "./_components/fields/skills";
 import { Header } from "./_components/header";
@@ -30,7 +30,7 @@ createRoot(document.getElementById("root")!).render(
       <SkillsField />
       <ProjectsField />
       <ConnectWithMeField />
-      <PortifolioMadeWithField />
+      <PortfolioMadeWithField />
       </div>
     </ThemeProvider>
   </StrictMode>

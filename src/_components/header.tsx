@@ -21,7 +21,7 @@ export function Header() {
     "Skills",
     "Projects",
     "Connect With Me",
-    "Portifolio Made With",
+    "Portfolio Made With",
   ];
   return (
     <div
